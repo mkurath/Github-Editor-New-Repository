@@ -196,7 +196,8 @@ Test the connection server load balancing using both VMware View client and brow
 #.  Verify that the Agility desktop functions
 
 #.  Close the View client. (May need to slide the RDP Toolbar out of the
-    way)
+
+way)
 
 #.  Open IE and browse to ``https://vmw-LB-CS.demoisfun.net``
 
@@ -567,3 +568,6 @@ Test the APM (PCoIP) functionality using both VMware View client and browser acc
 .. |image11| image:: /_static/class1/image13.png
    :width: 5.67708in
    :height: 3.35417in
+.. |image99| image:: /_static/class1/image5.png
+   :width: 5.40625in
+   :height: 3.04167in
