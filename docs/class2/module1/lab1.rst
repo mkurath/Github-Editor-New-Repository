@@ -234,11 +234,15 @@ Figure 4 - Access external View Desktop
 
     |image9|
 
+#.  If you are using an existing VMW unfrastructure, it is possible to load balance the Connection servers contacted by the UAG server. We do this by using the VIP created in step 1 in the UAG configuration. No configuration is required by the student. (this parameter is pre configured) Get the Thumbprint by inspecting the details of the certificate when you access the VIP with a browser
+
+    |image99|
+
 #.  Use the VMware Horizon View client to access the security server
 
     - \+ New Server
 
-    - Security Server address ``vmw-secursvr1a.demoisfun.net``
+    - Security Server address ``vmw-uag1a.demoisfun.net``
 
     - Press Connect Button
 
@@ -253,7 +257,7 @@ Figure 4 - Access external View Desktop
 #.  Close the View client
 
 #.  Access the application through your browser 
-    ``https://vmw-secursvr1a.demoisfun.net``
+    ``https://vmw-uag1a.demoisfun.net``
 
 #.  Select VMware Horizon View HTML access
 
@@ -291,14 +295,13 @@ Figure 5 - Load balance Security Servers
 **Deploy the iApp**
 
 #. From "corporate-pc"
-
-#. Create a new Application Service by selecting
+0#. Create a new Application Service by selecting
 
    - iApps >> Application Services
 
    - Press the **Create** button
 
-   - Name the Application Service ``VM_LAB_1_LBSS``
+   - Name the Application Service ``VM_LAB_1_LBUAG``
 
    - Select ``f5.vmware_view.v1.5.1`` for the template
 
@@ -328,9 +331,9 @@ Figure 5 - Load balance Security Servers
    +====================================================================================+===========================+
    | What FQDN will clients use to access the View environment?                         | vmw-LB-SS.demoisfun.net   |
    +------------------------------------------------------------------------------------+---------------------------+
-   | Which Servers should be included in this pool?                                     | 192.168.3.214             |
+   | Which Servers should be included in this pool?                                     | 192.168.3.210             |
    |                                                                                    |                           |
-   |                                                                                    | 192.168.3.215             |
+   |                                                                                    | 192.168.3.211             |
    +------------------------------------------------------------------------------------+---------------------------+
 
 #. **Application Health**
