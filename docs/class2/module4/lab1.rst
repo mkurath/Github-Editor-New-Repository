@@ -44,7 +44,7 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
    
    |image41|
    
-#. Add a branch  for the Citrix Receiver to the Client type decision Box
+#. Add a branch  for the Citrix Receiver to the Client type decision Box 1
 
    - Click on the “Client Type” object - Select the “Branch Rules” Tab
    - Click the “Add Branch Rule” button
