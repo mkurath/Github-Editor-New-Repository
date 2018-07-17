@@ -42,6 +42,8 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
    - Press the “Update” button
    - Pres the “Save” button
    
+   |image41|
+   
 #. Add a branch  for the Citrix Receiver to the Client type decision Box
 
    - Click on the “Client Type” object - Select the “Branch Rules” Tab
@@ -202,3 +204,9 @@ Task 2 – Test Connectivity
    - Close the IE browser window (Scroll to the upper right corner of the window and hit the “X”
    - Close the browser window
 
+.. |image41| image:: /_static/class1/image41.png
+   :width: 5.40625in
+   :height: 3.04167in
+.. |image42| image:: /_static/class1/image42.png
+   :width: 2.47015in
+   :height: 1.73397in
