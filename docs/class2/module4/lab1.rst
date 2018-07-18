@@ -70,8 +70,7 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
 #. Add a Domain Variable Assign object to the Citrix Receiver branch
  
    - Click the “+” to the right of the Logon Page
-   - Select the “Assignment” tab
-   - Select “Variable Assign”
+   - Select the “Assignment” tab   - Select “Variable Assign”
    - Click the “Add Item” button
    - Click the “Add new entry” button
    - Click the “change” link
