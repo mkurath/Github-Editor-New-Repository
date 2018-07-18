@@ -80,6 +80,8 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
    - Click the “Finished” Button
    - Click the “Save” button
 
+   |image42|
+
 #. Add an AD Auth object to the Citrix Receiver branch
 
    - Click the “+” to the right of Variable Assign
@@ -106,6 +108,8 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
    - Click the “Save” button
    - Click the “Update” button
    - Click the “Save” button
+
+   |image43|
 
 #. Apply the access policy
 
@@ -204,6 +208,17 @@ Task 2 – Test Connectivity
    - Close the IE browser window (Scroll to the upper right corner of the window and hit the “X”
    - Close the browser window
 
+   |image44|
+
 .. |image41| image:: /_static/class1/image41.png
+   :width: 5.40625in
+   :height: 3.04167in
+.. |image42| image:: /_static/class1/image42.png
+   :width: 5.40625in
+   :height: 3.04167in
+.. |image43| image:: /_static/class1/image43.png
+   :width: 5.40625in
+   :height: 3.04167in
+   .. |image44| image:: /_static/class1/image44.png
    :width: 5.40625in
    :height: 3.04167in
