@@ -108,7 +108,7 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
    - Click the “Update” button
    - Click the “Save” button
 
-   |image43|
+      |image43|
 
 #. Apply the access policy
 
@@ -207,7 +207,7 @@ Task 2 – Test Connectivity
    - Close the IE browser window (Scroll to the upper right corner of the window and hit the “X”
    - Close the browser window
 
-   |image44|
+      |image44|
 
 .. |image41| image:: /_static/class1/image41.png
    :width: 5.40625in
