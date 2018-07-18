@@ -155,7 +155,6 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
    - Navigate to Local Traffic>>Virtual Servers>>Virtual Server List
    - Press the Create Button in the upper right section of the GUI
    - Configure the VIP with the variables below
-
 #. VIP Config Parameters 
 
    +--------------------------------------------+----------------------------+
@@ -218,7 +217,7 @@ Task 2 – Test Connectivity
 .. |image43| image:: /_static/class1/image43.png
    :width: 5.40625in
    :height: 3.04167in
-   .. |image44| image:: /_static/class1/image44.png
+.. |image44| image:: /_static/class1/image44.png
    :width: 5.40625in
    :height: 3.04167in
 
