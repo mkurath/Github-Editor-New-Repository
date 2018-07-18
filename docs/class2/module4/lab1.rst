@@ -222,6 +222,4 @@ Task 2 – Test Connectivity
    .. |image44| image:: /_static/class1/image44.png
    :width: 5.40625in
    :height: 3.04167in
-   .. |image45| image:: /_static/class1/image45.png
-   :width: 5.40625in
-   :height: 3.04167in
+
