@@ -250,6 +250,7 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
    - Select Inbound Security Rules
    - Press the +Add button at the top of the page
 
+
    - Create a rule permitting destination port 80
    - Destination Port Ranges	 80
    - Name			        Port_80
@@ -290,20 +291,32 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 
    |image117|
 
-•	Access the BIG-IP management GUI
-o	https://<Public-IP-of -Management)
-	Username: student##
-	Password: ChangeMeNow123
-•	Create another Virtual Server using  the Azure_Ubuntu_Pool  (this is done to skip the redundancy of building another pool)
-o	Local Traffic>>Virtual Servers
-	Create Button in upper right corner
-	Name				ADD_Azure_Ubuntu_VIP
-	Destination Address 		10.0.2.20 <IP created in prior step>
-	Service Port			HTTP
-	HTTP Profile			http
-	Source Address Translation auto map
-	Default Pool			Azure_Ubuntu_Pool  
-o	Finished Button
+#. Access the BIG-IP management GUI
+
+   - https://<Public-IP-of -Management)
+    - Username: azureuser
+    - Password: ChangeMeNow123
+    
+#. Create another Virtual Server using  the Azure_Ubuntu_Pool  (this is done to skip the redundancy of building another pool)
+
+   - Create Button in upper right corner
+ 
+
+   +---------------------------------------------+---------------------------------------+
+   | Name                                        | ADD_Azure_Ubuntu_VIP                      |
+   +---------------------------------------------+---------------------------------------+
+   | Address                                     | 10.0.2.20 <IP Info From Azure Portal> |
+   +---------------------------------------------+---------------------------------------+
+   | Service Port                                | http                                  |
+   +---------------------------------------------+---------------------------------------+
+   | HTTP Profile                                | http                                  |
+   +---------------------------------------------+---------------------------------------+
+   |Source Address Translation                   | auto map                              |
+   +---------------------------------------------+---------------------------------------+
+   | Default Pool                                | Azure_Ubuntu_pool                     |
+   +---------------------------------------------+---------------------------------------+
+
+   - Finished Button
 
 
 Disregard everything below this line --- except image definitions at bottom
