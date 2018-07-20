@@ -255,8 +255,8 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP
    - Select Inbound Security Rules
    - Press the +Add button at the top of the page
    - Create a rule permitting destination port 80
-       Destination Port Ranges	 80
-     Name			       Port_80
+   - Destination Port Ranges	 80
+   - Name			        Port_80
    - Press the Add button at the bottom of the window
 
 
