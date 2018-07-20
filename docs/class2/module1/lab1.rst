@@ -231,6 +231,7 @@ these resources (External use case with F5 load balancing)
 This environment load balances 2 external facing Security Servers. These
 Security Servers are directly mapped to 2 existing connection servers in
 the environment (not the 2 Connections Servers that are load balances in
+
 the steps above)
 
 |image10|
@@ -282,6 +283,7 @@ Figure 5 - Load balance Security Servers
    +------------------------------------------------------------------------------------+---------------------------+
 
 #
+
 .. |image101| image:: /_static/class1/image101.png
    :width: 5.40625in
    :height: 6.04167in
