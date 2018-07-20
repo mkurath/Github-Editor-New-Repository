@@ -184,6 +184,7 @@ Use the Azure portal to gather IP information about the systems you have built
 Review the BIG IP config objects created by the template and build a VIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 #. Access the BIG-IP management GUI
 
    - https://<Public-IP-of-Management>
@@ -217,7 +218,13 @@ Review the BIG IP config objects created by the template and build a VIP
 
 
    |image113|
+   
+   #. Create a Virtual Server using the Azure_Ubuntu_Pool
 
+      - Local Traffic>>Virtual Servers
+      - Create Button in upper right corner
+
+   
    |image114|
 
 
