@@ -72,9 +72,7 @@ Accessing Ravello Jump Host
    - You can monitor deployment on the azure dashboard by opening the Notifications in the azure portal
 
    |image103|
-.. |image103| image:: /_static/class1/image103.png
-   :width: 3.40625in
-   :height: 1.04167in
+
 
 #. Continue with the Lab. The deployment will complete by the time the BIG-IP configuration is required
 
@@ -293,6 +291,9 @@ Figure 5 - Load balance Security Servers
 
 #
 
+.. |image103| image:: /_static/class1/image103.png
+   :width: 3.40625in
+   :height: 1.04167in
 .. |image3| image:: /_static/class1/image5.png
    :width: 5.40625in
    :height: 3.04167in
