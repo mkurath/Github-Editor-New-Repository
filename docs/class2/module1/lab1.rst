@@ -1,4 +1,4 @@
-      
+       
 
 Lab 1.1: Deploy a BYOL BIG-IP in azure with 3 NIC’s
 ==================================
@@ -10,7 +10,7 @@ In this lab you will build an F5 BIG-IP using a publicly available github templa
 
 Log on to the Ravello jumphost using the FQDN assigned by the instructor. All work in this lab will be done from the jumphost using the Browser and Terminal functions. 
 
-|image3|
+   |image3|
 
 Accessing Ravello Jump Host
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -385,6 +385,6 @@ Figure 5 - Load balance Security Servers
 .. |image111| image:: /_static/class1/image111.png
    :width: 6.67708in
    :height: 5.35417in
-.. |image99| image:: /_static/class1/image5.png
+.. |image3| image:: /_static/class1/image3.png
    :width: 5.40625in
    :height: 3.04167in
