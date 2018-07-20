@@ -12,18 +12,16 @@ Log on to the Ravello jumphost using the FQDN assigned by the instructor. All wo
 
 |image3|
 
-Figure 2 - Accessing Internal View Desktop
-
+Accessing Ravello Jump Host
 
 #. When prompted for credentials
 
    - Username: Ubuntu
-
    - Password: supernetops
 
-#. Open the chrome browser
-#.	Adjust the font size using the Zoom In
-#.	Size the window
+   - Open the chrome browser
+   - Adjust the font size using the Zoom In
+   - Size the window
 #. Browse to Github to access the F5 – Azure templates
 
    - https://github.com/F5Networks/f5-azure-arm-templates
@@ -71,7 +69,9 @@ Figure 2 - Accessing Internal View Desktop
    :width: 5.40625in
    :height: 10.04167in
    
-
+.. |image101| image:: /_static/class1/image101.png
+   :width: 5.40625in
+   :height: 6.04167in
 
    - Use the pulldown to select a standard https monitor
 
