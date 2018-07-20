@@ -201,9 +201,9 @@ Review the BIG IP config objects created by the template and build a VIP
    - Create Button in upper right corner
    
    +------------------------+----------------------------------------+
-   | Name                   | Azure_Ubuntu_VIP                       |
+   | Name                   | Azure_Ubuntu_Pool                       |
    +------------------------+----------------------------------------+
-   | Health Monitors        | http                                   |
+   | Health Monitors   | http                                   |
    +------------------------+----------------------------------------+
    | Address                | 10.0.3.5  <IP Info from Azure Portal>  |
    +------------------------+----------------------------------------+
@@ -221,13 +221,13 @@ Review the BIG IP config objects created by the template and build a VIP
    - Create Button in upper right corner
    
    +------------------------+----------------------------------------+
-   | Name                   | Azure_Ubuntu_Pool                      |
+   | Name                   | Azure_Ubuntu_VIP                       |
    +------------------------+----------------------------------------+
-   | Health Monitors        | http                                   |
-   +------------------------+----------------------------------------+
-   | Address                | 10.0.3.5  <IP Info from Azure Portal>  |
+   | Addredss               | 10.0.2.10 <IP Info from Azure Portal>  |
    +------------------------+----------------------------------------+
    | Service Port           | http                                   |
+   +------------------------+----------------------------------------+
+   | SHTTP Profile          | http                                   |
    +------------------------+----------------------------------------+
    
    +----------------------------+--------------------------------------+
