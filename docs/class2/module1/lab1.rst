@@ -266,8 +266,7 @@ Manually add an external IP to azure and build a VIP
 In this section we will add a new application to the existing BIG-IP.  Since we want to make the application available externally, we will manually add a NAT entry to the external interface in Azure and then create a VIP on the BIG-IP.
 
 #. Access the Azure Portal
-
-   - Add a Public IP to Private IP NAT to the external interface in Azure
+   
    - Review the existing external interface 
    - Resource Group
    - x-student#bigip-ext   	Network interface
@@ -276,7 +275,21 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 
    |image116|
    
-   
+   -Add a Public IP to Private IP NAT to the external interface in Azure
+   - Select +ADD at the top of the GUI
+   - Name 			x-student#-rg-ext-ipconfig20
+   - Allocation		Static
+   - IP address		10.0.2.20
+   - Public IP address	Enabled
+   - Create New
+   - Name			x-student#bigip-ext-pip20
+   - SKU			Basic	
+   - Assignment		Static
+   - OK (bottom right)
+   - OK (bottom left)
+
+
+
 Disregard everything below this line --- except image definitions at bottom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
