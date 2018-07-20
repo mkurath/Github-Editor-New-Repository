@@ -278,16 +278,16 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
    
    - Add a Public IP to Private IP NAT to the external interface in Azure
     - Select +ADD at the top of the GUI
-    - Name 			x-student#-rg-ext-ipconfig20
-    - Allocation		Static
-    - IP address		10.0.2.20
-    - Public IP address	Enabled
-    - Create New
-    - Name			x-student#bigip-ext-pip20
-    - SKU			Basic	
-    - Assignment		Static
-    - OK (bottom right)
-    - OK (bottom left)
+     - Name 			x-student#-rg-ext-ipconfig20
+     - Allocation		Static
+     - IP address		10.0.2.20
+     - Public IP address	Enabled
+     - Create New
+     - Name			x-student#bigip-ext-pip20
+     - SKU			Basic	
+     - Assignment		Static
+     - OK (bottom right)
+     - OK (bottom left)
 
    |image117|
 
@@ -323,8 +323,9 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
    - http://<Public-IP mapped to the VIP address--this info can be found in the Azure portal>
 
 Delete the Objects uou created in this lab
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  Right Click on the Resource group and select Delete Resource Group
+ 
    - Resource Groups
    - Select your Resource Group
    - Right Click on the Resource group and select Delete Resource Group
