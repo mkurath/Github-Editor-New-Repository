@@ -86,7 +86,8 @@ VInstall a Linux Server in Azure
    | Name                   | F5Ubuntux-student#  |
    +------------------------+---------------------+
    | VM disk type            | HDD                |
-   +------------------------+---------------------+
+
++------------------------+---------------------+
    | Admin Username         | azureuser           |
    +------------------------+---------------------+
    | Admin Password         | ChangeMeNow123      |
@@ -126,21 +127,14 @@ VInstall a Linux Server in Azure
 
    |IMAGE108|
 
+Install Apache Web Server on the Linux Server in Azure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#. Access the Azure Portal to find the external IP address of the Ubuntu Server
+   - Resource Groups
+   - Select your Resource Group
+   - Identify the Object with the Ubuntu Public IP address
 
-
-
-
-
-
-
-
-
-View the properties of the iApp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#. Select the Properties tab at the top of the page
-
-   |image7|
+   |image109|
 
 #. Use the pull down next to Application Service:
 
@@ -349,9 +343,9 @@ Figure 5 - Load balance Security Servers
 .. |image108| image:: /_static/class1/image108.png
    :width: 6.25000in
    :height: 6.18750in
-.. |image9| image:: /_static/class1/image11.png
-   :width: 1.29861in
-   :height: 1.88819in
+.. |image109| image:: /_static/class1/image109.png
+   :width: 6.29861in
+   :height: 6.88819in
 .. |image10| image:: /_static/class1/image12.png
    :width: 4.63542in
    :height: 3.06250in
