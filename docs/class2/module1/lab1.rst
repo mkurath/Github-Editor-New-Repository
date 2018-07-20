@@ -200,6 +200,16 @@ Review the BIG IP config objects created by the template and build a VIP
    - Local Traffic>>Pools
    - Create Button in upper right corner
 
+   +------------------------+----------------------------------------+
+   | Name                   | Azure_Ubuntu_Pool                      |
+   +------------------------+----------------------------------------+
+   | Health Monitors        | http                                   |
+   +------------------------+----------------------------------------+
+   | Address                | 10.0.3.5  <IP Info from Azure Portal>  |
+   +------------------------+----------------------------------------+
+   | Service Port           | http                                   |
+   +------------------------+----------------------------------------+
+
 
    |image113|
 
