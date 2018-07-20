@@ -231,6 +231,7 @@ Review the BIG IP config objects created by the template and build a VIP
    | Name                                        | Azure_Ubuntu_VIP                      |
    +---------------------------------------------+---------------------------------------+
    | Address                                     | 10.0.2.10 <IP Info From Azure Portal> |
+
    +---------------------------------------------+---------------------------------------+
    | Service Port                                | http                                  |
    +---------------------------------------------+---------------------------------------+
@@ -245,8 +246,8 @@ Review the BIG IP config objects created by the template and build a VIP
 
    |image114|
 
-Add an ACL in the Azure portal to permit HTTP traffic to the VIP
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connectivity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. Access the Azure Portal to add a permit statement to the external ACL
 
    - Resource Groups
@@ -260,6 +261,13 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP
    - Press the Add button at the bottom of the window
 
    |image115|
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#. Verify that you can connect to the Application 
+   - http://<Public-IP mapped to the VIP address>
+
+
 
 Disregard everything below this line --- except image definitions at bottom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -320,4 +328,4 @@ Disregard everything below this line --- except image definitions at bottom
    :height: 4.35417in
 .. |image3| image:: /_static/class1/image3.png
    :width: 5.40625in
-   :height: 3.04167in
+   :height: 6.04167in
