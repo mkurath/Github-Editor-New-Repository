@@ -396,7 +396,7 @@ Figure 5 - Load balance Security Servers
 .. |image111| image:: /_static/class1/image111.png
    :width: 6.67708in
    :height: 5.35417in
-   .. |image111| image:: /_static/class1/image111.png
+.. |image112| image:: /_static/class1/image112.png
    :width: 6.67708in
    :height: 7.35417in
 .. |image3| image:: /_static/class1/image3.png
