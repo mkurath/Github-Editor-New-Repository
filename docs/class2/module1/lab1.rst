@@ -276,7 +276,7 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 
    |image116|
    
-   -Add a Public IP to Private IP NAT to the external interface in Azure
+   - Add a Public IP to Private IP NAT to the external interface in Azure
     - Select +ADD at the top of the GUI
     - Name 			x-student#-rg-ext-ipconfig20
     - Allocation		Static
