@@ -176,7 +176,10 @@ Use the Azure portal to gather IP information about the systems uou hqave built
    - Note External Self IP mapped to 10.0.2.10 (this will be used to access the VIP created on the BIG-IP)
 
    |image112|
-   
+ 
+ 
+ 
+ 
  Test the connection server load balancing using both VMware View client and browser access methods. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
 
@@ -394,6 +397,9 @@ Figure 5 - Load balance Security Servers
 .. |image111| image:: /_static/class1/image111.png
    :width: 6.67708in
    :height: 5.35417in
+   .. |image111| image:: /_static/class1/image111.png
+   :width: 6.67708in
+   :height: 7.35417in
 .. |image3| image:: /_static/class1/image3.png
    :width: 5.40625in
    :height: 3.04167in
