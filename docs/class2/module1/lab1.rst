@@ -69,11 +69,6 @@ Accessing Ravello Jump Host
    :width: 5.40625in
    :height: 10.04167in
    
-.. |image101| image:: /_static/class1/image101.png
-   :width: 5.40625in
-   :height: 6.04167in
-
-   - Use the pulldown to select a standard https monitor
 
 #. Press the **Finished** button
 
