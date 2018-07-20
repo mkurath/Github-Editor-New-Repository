@@ -112,12 +112,12 @@ VInstall a Linux Server in Azure
 
    |image106|
 
-#. Select the machine config parameters
+#. Define the machine config parameters
 
-      - Select Subnet
-      - Select the internal subnet
-      - Select SSH in the select public inbound ports
-      - Select the “OK” button
+   - Select Subnet
+   - Select the internal subnet
+   - Select SSH in the select public inbound ports
+   - Select the “OK” button
 
     |image107|
 
