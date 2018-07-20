@@ -29,7 +29,8 @@ Accessing Ravello Jump Host
    - Click PAYG Deploy to Azure
    |image101|
 
-#. You will be redirected to portal.azure.com]
+#. You will be redirected to portal.azure.com
+
    -Log into the azure portal when prompted
    -Username : x-student#@f5custlabs.onmicrosoft.com
    -Password:  ChangeMeNow123
@@ -43,7 +44,8 @@ Accessing Ravello Jump Host
    +------------------------+---------------------+
    | Location               | East US             |
    +------------------------+---------------------+
-   | Admin Username         | azureuser           |   +------------------------+---------------------+
+   | Admin Username         | azureuser           |
+   +------------------------+---------------------+
    | Admin Password         | ChangeMeNow123      |
    +------------------------+---------------------+
    | DNS Label              | x-student#BIGIP     |
@@ -246,8 +248,8 @@ Review the BIG IP config objects created by the template and build a VIP
 
 Add an ACL in the Azure portal to permit HTTP traffic to the VIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 #. Access the Azure Portal to add a permit statement to the external ACL
+
    - Resource Groups
    - Select your Resource Group
    - Identify the Object with the BIG-IP Network Security **x-student#bigip-ext-nsg** 
