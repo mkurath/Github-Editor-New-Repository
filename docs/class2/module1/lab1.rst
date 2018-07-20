@@ -259,6 +259,7 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP
    - Name			        Port_80
    - Press the Add button at the bottom of the window
 
+   |image115|
 
 Disregard everything below this line --- except image definitions at bottom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -314,6 +315,9 @@ Disregard everything below this line --- except image definitions at bottom
 .. |image114| image:: /_static/class1/image114.png
    :width: 6.67708in
    :height: 9.35417in
+.. |image115| image:: /_static/class1/image115.png
+   :width: 6.67708in
+   :height: 4.35417in
 .. |image3| image:: /_static/class1/image3.png
    :width: 5.40625in
    :height: 3.04167in
