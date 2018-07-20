@@ -60,7 +60,6 @@ Accessing Ravello Jump Host
 #. Select the “Purchase” button
 
    |image102|
-
 #. This will take about 15 minutes –
    - You can monitor deployment on the azure dashboard by opening the Notifications in the azure portal
 
@@ -119,8 +118,13 @@ VInstall a Linux Server in Azure
    - Select SSH in the select public inbound ports
    - Select the “OK” button
 
-    |image107|
+   |image107|
+   
+3. Create the machine
+   - Review the configuration
+   - Select the “Create” button
 
+   |IMAGE108|
 
 
 
@@ -342,9 +346,9 @@ Figure 5 - Load balance Security Servers
 .. |image107| image:: /_static/class1/image107.png
    :width: 6.15625in
    :height: 6.29167in
-.. |image8| image:: /_static/class1/image10.png
-   :width: 5.25000in
-   :height: 3.18750in
+.. |image108| image:: /_static/class1/image108.png
+   :width: 6.25000in
+   :height: 6.18750in
 .. |image9| image:: /_static/class1/image11.png
    :width: 1.29861in
    :height: 1.88819in
