@@ -62,7 +62,7 @@ Figure 2 - Accessing Internal View Desktop
    
    
    |image102|
-.. |image101| image:: /_static/class1/image101.png
+.. |image102| image:: /_static/class1/image102.png
    :width: 5.40625in
    :height: 10.04167in
    
