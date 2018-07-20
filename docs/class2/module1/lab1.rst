@@ -220,7 +220,7 @@ Review the BIG IP config objects created by the template and build a VIP
 
    - Local Traffic>>Virtual Servers
    - Create Button in upper right corner
-
+   
    +----------------------------+--------------------------------------+
    | Name                       | Azure_Ubuntu_VIP                     |
    +----------------------------+--------------------------------------+
@@ -234,7 +234,7 @@ Review the BIG IP config objects created by the template and build a VIP
    +----------------------------+--------------------------------------+
    | Default Pool               | Azure_Ubuntu_Poolx-student#-rg       |
    +----------------------------+--------------------------------------+
-
+   
    - Finished Button
 
    |image114|
