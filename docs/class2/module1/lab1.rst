@@ -34,7 +34,7 @@ Accessing Ravello Jump Host
    -Username : x-student#@f5custlabs.onmicrosoft.com
    -Password:  ChangeMeNow123
 
-#. Complete the Customized template with the following values (don’t follow the screen shot)
+#. Complete the Customized template with the following values **(don’t follow the screen shot)**
 
    +------------------------+---------------------+
    | Resource Group         | Select Create New   |
@@ -69,31 +69,44 @@ Accessing Ravello Jump Host
 #. Continue with the Lab. The deployment will complete by the time the BIG-IP configuration is required
 
 
-View the objects which were created by the iApp
+VInstall a Linux Server in Azure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Select the Components tab at the top of the page
+#. Navigate to the Azure Marketplace and select Create a Resource
+#. Select Ubuntu Server 17.10 VM
 
-   |image6|
+   |image104|
 
-#. Is the Virtual server available?
+#. Complete the Customized template with the following values **(don’t follow the screen shot)**
 
-#. Are the pool members available?
+   +------------------------+---------------------+
+   | Name                   | F5Ubuntux-student#  |
+   +------------------------+---------------------+
+   | VM disk type            | HDD                |
+   +------------------------+---------------------+
+   | Admin Username         | azureuser           |
+   +------------------------+---------------------+
+   | Admin Password         | ChangeMeNow123      |
+   +------------------------+---------------------+
+   | Resource Group         | Select:Use Existing |
+   +------------------------+---------------------+
+   | Resource Group         | x-student#-rg       |
+   +------------------------+---------------------+
+   | Location               | East US             |                      
+   +------------------------+---------------------+
+   |Timezone                | UTC                 |
+   +------------------------+---------------------+ 
 
-#. What is the node status? Why?
+#. Select the “OK” button
 
-#. Note that a persistence profile was created
+   |image105|
+   
+#. Highlight B1s
 
-   - Check Match Across Services
+#. Select Button at the bottom of the page
 
-   - Press update
-
-   - Note the error at the top of the page
-
-#. Return to iApp>>Application Services
-
-#. Review the remaining parameters (any questions)
-
+   |image106|
+   
 View the properties of the iApp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -293,18 +306,15 @@ Figure 5 - Load balance Security Servers
 .. |image103| image:: /_static/class1/image103.png
    :width: 3.40625in
    :height: 1.04167in
-.. |image3| image:: /_static/class1/image5.png
+.. |image104| image:: /_static/class1/image6.png
    :width: 5.40625in
    :height: 3.04167in
-.. |image4| image:: /_static/class1/image6.png
-   :width: 2.47015in
-   :height: 1.73397in
-.. |image5| image:: /_static/class1/image7.png
+.. |image105| image:: /_static/class1/image105.png
    :width: 4.94792in
-   :height: 3.20833in
-.. |image6| image:: /_static/class1/image8.png
-   :width: 3.32292in
-   :height: 1.05208in
+   :height: 6.20833in
+.. |image106| image:: /_static/class1/image106.png
+   :width: 6.32292in
+   :height: 3.05208in
 .. |image7| image:: /_static/class1/image9.png
    :width: 3.15625in
    :height: 1.29167in
