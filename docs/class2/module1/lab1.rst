@@ -27,8 +27,7 @@ Accessing Ravello Jump Host
    - https://github.com/F5Networks/f5-azure-arm-templates
    - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs
    - Click PAYG Deploy to Azure
-
-    |image101|
+   |image101|
 
 #. You will be redirected to portal.azure.com]
    -Log into the azure portal when prompted
