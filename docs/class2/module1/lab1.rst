@@ -232,7 +232,6 @@ Review the BIG IP config objects created by the template and build a VIP
    | HTTP Profile                                | http                                  |
    +---------------------------------------------+---------------------------------------+
    |Source Address Translation                   | auto map                              |
-
    +---------------------------------------------+---------------------------------------+
    | Default Pool                                | Azure_Ubuntu_pool                     |
    +---------------------------------------------+---------------------------------------+
@@ -289,6 +288,22 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
     - OK (bottom right)
     - OK (bottom left)
 
+   |image117|
+
+•	Access the BIG-IP management GUI
+o	https://<Public-IP-of -Management)
+	Username: student##
+	Password: ChangeMeNow123
+•	Create another Virtual Server using  the Azure_Ubuntu_Pool  (this is done to skip the redundancy of building another pool)
+o	Local Traffic>>Virtual Servers
+	Create Button in upper right corner
+	Name				ADD_Azure_Ubuntu_VIP
+	Destination Address 		10.0.2.20 <IP created in prior step>
+	Service Port			HTTP
+	HTTP Profile			http
+	Source Address Translation auto map
+	Default Pool			Azure_Ubuntu_Pool  
+o	Finished Button
 
 
 Disregard everything below this line --- except image definitions at bottom
@@ -303,6 +318,9 @@ Disregard everything below this line --- except image definitions at bottom
 
 #
 
+.. |image3| image:: /_static/class1/image3.png
+   :width: 5.40625in
+   :height: 6.04167in
 .. |image101| image:: /_static/class1/image101.png
    :width: 5.40625in
    :height: 6.04167in
@@ -351,6 +369,6 @@ Disregard everything below this line --- except image definitions at bottom
 .. |image116| image:: /_static/class1/image116.png
    :width: 6.67708in
    :height: 2.35417in
-.. |image3| image:: /_static/class1/image3.png
-   :width: 5.40625in
-   :height: 6.04167in
+.. |image117| image:: /_static/class1/image116.png
+   :width: 6.67708in
+   :height: 4.35417in
