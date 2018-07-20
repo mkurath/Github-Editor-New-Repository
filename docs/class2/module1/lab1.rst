@@ -232,6 +232,7 @@ Review the BIG IP config objects created by the template and build a VIP
    | HTTP Profile                                | http                                  |
    +---------------------------------------------+---------------------------------------+
    |Source Address Translation                   | auto map                              |
+
    +---------------------------------------------+---------------------------------------+
    | Default Pool                                | Azure_Ubuntu_pool                     |
    +---------------------------------------------+---------------------------------------+
@@ -256,14 +257,16 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
 
    |image115|
 
-#. Verify that you can connect to the Application 
-   - http://<Public-IP mapped to the VIP address>
+#. Verify that you can connect to the Application
+
+   - http://<Public-IP mapped to the VIP address from the Azure portal>
 
 Manually add an external IP to azure and build a VIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In this section we will add a new application to the existing BIG-IP.  Since we want to make the application available externally, we will manually add a NAT entry to the external interface in Azure and then create a VIP on the BIG-IP.
 
 #. Access the Azure Portal
+
    - Add a Public IP to Private IP NAT to the external interface in Azure
    - Review the existing external interface 
    - Resource Group
@@ -271,7 +274,9 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
    - IP configurations
    - Note that we currently have 4 IP addresses on the 10.0.2.4 segment
 
-
+   |image116|
+   
+   
 Disregard everything below this line --- except image definitions at bottom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
@@ -329,6 +334,9 @@ Disregard everything below this line --- except image definitions at bottom
 .. |image115| image:: /_static/class1/image115.png
    :width: 6.67708in
    :height: 4.35417in
+.. |image116| image:: /_static/class1/image116.png
+   :width: 6.67708in
+   :height: 2.35417in
 .. |image3| image:: /_static/class1/image3.png
    :width: 5.40625in
    :height: 6.04167in
