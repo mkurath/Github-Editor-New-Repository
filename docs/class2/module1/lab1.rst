@@ -196,6 +196,7 @@ Review the BIG IP config objects created by the template and build a VIP
 #. Inspect the configuration of the BIG-IP
 
    - The github template has built the base configuration 
+
    - System>>License
    - Network>>Self IPs
    - Network>>VLANs
@@ -234,6 +235,10 @@ Review the BIG IP config objects created by the template and build a VIP
    | Service Port                                | http                                  |
    +---------------------------------------------+---------------------------------------+
    | HTTP Profile                                | http                                  |
+   +---------------------------------------------+---------------------------------------+
+   |Source Address Translation                   | auto map                              |
+   +---------------------------------------------+---------------------------------------+
+   | Default Pool                                | Azure_Ubuntu_pool                     |
    +---------------------------------------------+---------------------------------------+
 
    |image114|
