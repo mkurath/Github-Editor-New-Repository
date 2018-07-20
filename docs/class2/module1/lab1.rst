@@ -187,7 +187,6 @@ Review the BIG IP config objects created by the template and build a VIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-
 #. Access the BIG-IP management GUI
 
    - https://<Public-IP-of-Management>
@@ -235,7 +234,7 @@ Review the BIG IP config objects created by the template and build a VIP
    | Service Port                                | http                                  |
    +---------------------------------------------+---------------------------------------+
    | HTTP Profile                                | http                                  |
-   =---------------------------------------------+---------------------------------------+
+   +---------------------------------------------+---------------------------------------+
 
    |image114|
 
