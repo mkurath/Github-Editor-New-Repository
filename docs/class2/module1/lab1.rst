@@ -250,6 +250,7 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
    - Identify the Object with the BIG-IP Network Security **x-student#bigip-ext-nsg** 
    - Select Inbound Security Rules
    - Press the +Add button at the top of the page
+
    - Create a rule permitting destination port 80
    - Destination Port Ranges	 80
    - Name			        Port_80
@@ -275,7 +276,7 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 
    |image116|
    
-   -Add a Public IP to Private IP NAT to the external interface in Azure
+    -Add a Public IP to Private IP NAT to the external interface in Azure
    - Select +ADD at the top of the GUI
    - Name 			x-student#-rg-ext-ipconfig20
    - Allocation		Static
