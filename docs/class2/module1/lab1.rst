@@ -1,7 +1,7 @@
 Lab 1.1: Deploy a BYOL BIG-IP in azure with 3 NIC’s
 ==================================
 
-Task 1 – Access Github and deploy BIG-IP Azure Template 
+   Task 1 – Access Github and deploy BIG-IP Azure Template 
 -----------------------------------------------------------
 
 In this lab you will build an F5 BIG-IP using a publicly available github template and a web server using the Azure portal GUI.  Once these components are built you will create a Virtual server and pool on the BIG-IP and verify connectivity to the Ubuntu server through the VIP.  Take time to inspect the objects in the Azure Resource Group you create. Azure provides integrated NAT and Firewall services. You will review the objects in the resource group through the portal to understand the IP scheme, NAT and Firewall rules.
@@ -25,7 +25,8 @@ Figure 2 - Accessing Internal View Desktop
 #.	Size the window
 #. Browse to Github to access the F5 – Azure templates
    - https://github.com/F5Networks/f5-azure-arm-templates
-   - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs   - Click PAYG Deploy to Azure
+   - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs
+   - Click PAYG Deploy to Azure
    
    |image101|
 .. |image101| image:: /_static/class1/image101.png
