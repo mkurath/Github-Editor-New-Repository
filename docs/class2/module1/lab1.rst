@@ -299,6 +299,7 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
     
 #. Create another Virtual Server using  the Azure_Ubuntu_Pool  (this is done to skip the redundancy of building another pool)
 
+
    - Create Button in upper right corner
  
 
@@ -316,12 +317,21 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
    | Default Pool                                | Azure_Ubuntu_pool                     |
    +---------------------------------------------+---------------------------------------+
 
-   - Finished Button
+ - Finished Button
 
+#. Access the Application
+   - http://<Public-IP mapped to the VIP address--this info can be found in the Azure portal>
 
-Disregard everything below this line --- except image definitions at bottom
+Delete the Objects uou created in this lab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
+ Right Click on the Resource group and select Delete Resource Group
+   - Resource Groups
+   - Select your Resource Group
+   - Right Click on the Resource group and select Delete Resource Group
+   - Follow the prompts to complete the process
+
+   |image118|
+
 
 
 
@@ -382,6 +392,9 @@ Disregard everything below this line --- except image definitions at bottom
 .. |image116| image:: /_static/class1/image116.png
    :width: 6.67708in
    :height: 2.35417in
-.. |image117| image:: /_static/class1/image116.png
+.. |image117| image:: /_static/class1/image117.png
+   :width: 6.67708in
+   :height: 4.35417in
+.. |image118| image:: /_static/class1/image118.png
    :width: 6.67708in
    :height: 4.35417in
