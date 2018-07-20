@@ -257,7 +257,7 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
    - Press the Add button at the bottom of the window
 
    |image115|
-
+   
 #. Verify that you can connect to the Application
 
    - http://<Public-IP mapped to the VIP address from the Azure portal>
@@ -269,25 +269,25 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 #. Access the Azure Portal
    
    - Review the existing external interface 
-   - Resource Group
-   - x-student#bigip-ext   	Network interface
-   - IP configurations
-   - Note that we currently have 4 IP addresses on the 10.0.2.4 segment
+    - Resource Group
+    - x-student#bigip-ext   	Network interface
+    - IP configurations
+    - Note that we currently have 4 IP addresses on the 10.0.2.4 segment
 
    |image116|
    
-    -Add a Public IP to Private IP NAT to the external interface in Azure
-   - Select +ADD at the top of the GUI
-   - Name 			x-student#-rg-ext-ipconfig20
-   - Allocation		Static
-   - IP address		10.0.2.20
-   - Public IP address	Enabled
-   - Create New
-   - Name			x-student#bigip-ext-pip20
-   - SKU			Basic	
-   - Assignment		Static
-   - OK (bottom right)
-   - OK (bottom left)
+   -Add a Public IP to Private IP NAT to the external interface in Azure
+    - Select +ADD at the top of the GUI
+    - Name 			x-student#-rg-ext-ipconfig20
+    - Allocation		Static
+    - IP address		10.0.2.20
+    - Public IP address	Enabled
+    - Create New
+    - Name			x-student#bigip-ext-pip20
+    - SKU			Basic	
+    - Assignment		Static
+    - OK (bottom right)
+    - OK (bottom left)
 
 
 
