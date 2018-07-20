@@ -218,7 +218,7 @@ Review the BIG IP config objects created by the template and build a VIP
    +------------------------+----------------------------------------+
    | Health Monitors        | http                                   |
    +------------------------+----------------------------------------+
-   | Address                | 10.0.3.5  <VIP Info from Azure Portal>  |
+   | Address                | 10.0.3.5  <VIP Info from Azure Portal> |
    +------------------------+----------------------------------------+
    | Service Port           | http                                   |
    +------------------------+----------------------------------------+
@@ -244,7 +244,7 @@ Review the BIG IP config objects created by the template and build a VIP
  
 
    +---------------------------------------------+---------------------------------------+
-   | Name                                        | Azure_Ubuntu_VIP                      +
+   | Name                                        | Azure_Ubuntu_VIP                      |
    +---------------------------------------------+---------------------------------------+
    | Address                                     | 10.0.2.10 <IP Info From Azure Portal> |
    +---------------------------------------------+---------------------------------------|
