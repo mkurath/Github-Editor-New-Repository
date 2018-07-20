@@ -67,7 +67,7 @@ Accessing Ravello Jump Host
 .. |image102| image:: /_static/class1/image102.png
    :width: 5.40625in
    :height: 10.04167in
-  
+
 #. This will take about 15 minutes –
    - You can monitor deployment on the azure dashboard by opening the Notifications in the azure portal
 
