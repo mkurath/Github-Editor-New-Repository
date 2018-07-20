@@ -299,12 +299,11 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
     
 #. Create another Virtual Server using  the Azure_Ubuntu_Pool  (this is done to skip the redundancy of building another pool)
 
-
    - Create Button in upper right corner
  
 
    +---------------------------------------------+---------------------------------------+
-   | Name                                        | ADD_Azure_Ubuntu_VIP                      |
+   | Name                                        | ADD_Azure_Ubuntu_VIP                  |
    +---------------------------------------------+---------------------------------------+
    | Address                                     | 10.0.2.20 <IP Info From Azure Portal> |
    +---------------------------------------------+---------------------------------------+
@@ -322,7 +321,7 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 #. Access the Application
    - http://<Public-IP mapped to the VIP address--this info can be found in the Azure portal>
 
-Delete the Objects uou created in this lab
+Delete the objects you created in this lab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  Right Click on the Resource group and select Delete Resource Group
  
