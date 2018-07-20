@@ -259,6 +259,17 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
 #. Verify that you can connect to the Application 
    - http://<Public-IP mapped to the VIP address>
 
+Manually add an external IP to azure and build a VIP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In this section we will add a new application to the existing BIG-IP.  Since we want to make the application available externally, we will manually add a NAT entry to the external interface in Azure and then create a VIP on the BIG-IP.
+
+#. Access the Azure Portal
+   - Add a Public IP to Private IP NAT to the external interface in Azure
+   - Review the existing external interface 
+   - Resource Group
+   - x-student#bigip-ext   	Network interface
+   - IP configurations
+   - Note that we currently have 4 IP addresses on the 10.0.2.4 segment
 
 
 Disregard everything below this line --- except image definitions at bottom
