@@ -1,125 +1,72 @@
-Lab 1.1: Solutions for VMware View
+Lab 1.1: Deploy a BYOL BIG-IP in azure with 3 NIC’s
 ==================================
 
 Task 1 – Access VMware View Desktop environment without F5 
 -----------------------------------------------------------
 
-Test the functional VMware view environment using the internal
-Connection Servers (Internal use case without F5 integration)
+In this lab you will build an F5 BIG-IP using a publicly available github template and a web server using the Azure portal GUI.  Once these components are built you will create a Virtual server and pool on the BIG-IP and verify connectivity to the Ubuntu server through the VIP.  Take time to inspect the objects in the Azure Resource Group you create. Azure provides integrated NAT and Firewall services. You will review the objects in the resource group through the portal to understand the IP scheme, NAT and Firewall rules.
 
-Access the VDI with a client on the internal network. The workstation
-will be preconfigured to initiate the connection through a specific
-connection server. Security servers are not used by internal VDI users
+Log on to the Ravello jumphost using the FQDN assigned by the instructor. All work in this lab will be done from the jumphost using the Browser and Terminal functions. 
+
 
 |image3|
 
 Figure 2 - Accessing Internal View Desktop
 
-#. From the "corporate-pc".
-
-#. Use the VMware Horizon View client to access the connection server
-
-   |image4|
-
-   - VMware Horizon Client
-
-   - \+ New server
-
-#. Connection Server address "vmw-connsvr1c.demoisfun.net"
 
 #. When prompted for credentials
 
-   - Username: ``demo01``
+   - Username: Ubuntu
 
-   - Password: ``password``
+   - Password: supernetops
 
-#. Double-click the "Agility" icon to launch virtual desktop.
+#. Open the chrome browser
+#.	Adjust the font size using the Zoom In
+#.	Size the window
+#. Browse to Github to access the F5 – Azure templates
+   - https://github.com/F5Networks/f5-azure-arm-templates
+   - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs
+   - Click PAYG Deploy to Azure
+   
+   |image101|
+.. |image101| image:: /_static/class1/image101.png
+   :width: 5.40625in
+   :height: 6.04167in
 
-#. In the Agility virtual desktop, open Notepad and type in something.
+#. You will be redirected to portal.azure.com]
+   -Log into the azure portal when prompted
+   -Username : x-student#@f5custlabs.onmicrosoft.com
+   -Password:  ChangeMeNow123
 
-#. Disconnect from Agility desktop by closing View client. (RDP Toolbar
-   on top. May need to slide the blue RDP bar to the left in order to
-   click the X in Agility Toolbar)
+#. Complete the Customized template with the following values (don’t follow the screen shot)
 
-#. Open View client and try to reconnect to "vmw-connsvr1c.
-   demoisfun.net"
+   +------------------------+---------------------+
+   | Resource Group         | Select Create New   |
+   +------------------------+---------------------+
+   | Resource Group         | x-student#-rg       |
+   +------------------------+---------------------+
+   | Location               | East US             |
+   +------------------------+---------------------+
+   | Admin Username         | azureuser           |
+   +------------------------+---------------------+
+   | Admin Password         | ChangeMeNow123      |
+   +------------------------+---------------------+
+   | DNS Label              | x-student#BIGIP     |
+   +------------------------+---------------------+
+   | Licensed Bandwidth     | 25M                 |
+   +------------------------+---------------------+
+   | Number of External IPs | 3                   |                      
+   +------------------------+---------------------+
+   |Timezone                | UTC                 |
+   +------------------------+---------------------+ 
+   
+   
+   |image102|
+.. |image101| image:: /_static/class1/image101.png
+   :width: 5.40625in
+   :height: 10.04167in
+   
 
-#. Notepad should still be on the desktop with the text you input.
-
-#. Close the View client. (press the X in Agility Toolbar)
-
-#. Keep the RDP session open for Task 2
-
-Task 2 – Load Balance Connection Servers
-----------------------------------------
-
-Use the F5 iApp for VMware View to configure a load balancing
-environment for the Connection Servers. This will increase the number of
-Connection Servers available to internal users and load balance access
-to these resources (Internal use case with F5 load balancing)
-
-|image5|
-
-Figure 3 - Load balance Connection Servers
-
-**Deploy the iApp**
-
-#. From "corporate-pc".
-
-#. Use browser to access the F5 Admin GUI
-
-   - ``https://f5-bigip1a.demoisfun.net``
-
-     - Username: ``admin``
-
-     - Password: ``password``
-
-#. Create a new Application Service
-
-   - iApps >> Application Services
-
-   - Press the **Create** button
-
-   - Name the Application Service ``VM_LAB_1_LBCS``
-
-   - Select ``f5.vmware_view.v1.5.1`` for the template
-
-#. Review the **Welcome to the iAPP template for VMware Horizon View**
-
-#. Note the **Template Options** (leave these default)
-
-#. **Big-IP Access Policy Manager** (Set this to **No** for this
-   exercise)
-
-#. **SSL Encryption** (Certs are preloaded for this exercise)
-
-   +----------------------------------------------------------+------------------------------------------------------------------------+
-   | How should the BIG-IP system handle encrypted traffic?   | Terminate SSL for clients, re-encrypt to View servers (SSL-bridging)   |
-   +==========================================================+========================================================================+
-   | Which SSL certificate do you want to use?                | wild.demoisfun.net.crt                                                 |
-   +----------------------------------------------------------+------------------------------------------------------------------------+
-   | Which SSL private key do you want to use                 | wild.demoisfun.net.key                                                 |
-   +----------------------------------------------------------+------------------------------------------------------------------------+
-
-#. **PC Over IP** (leave these default – No PCoIP connections…)
-
-#. **Virtual Servers and Pools**
-
-   +------------------------------------------------------------------------------------+---------------------------+
-   | What virtual server IP address do you want to use for remote, untrusted clients?   | 192.168.10.150            |
-   +====================================================================================+===========================+
-   | What is the associated service port?                                               | 443                       |
-   +------------------------------------------------------------------------------------+---------------------------+
-   | What FQDN will clients use to access the View environment                          | vmw-LB-CS.demoisfun.net   |
-   +------------------------------------------------------------------------------------+---------------------------+
-   | Which Servers should be included in this pool                                      | 192.168.10.212            |
-   |                                                                                    |                           |
-   |                                                                                    | 192.168.10.213            |
-   +------------------------------------------------------------------------------------+---------------------------+
-
-#. **Client Optimization** (leave these default—Do not compress…)
-
-#. **Application Health**
 
    - Use the pulldown to select a standard https monitor
 
@@ -337,209 +284,7 @@ Figure 5 - Load balance Security Servers
    |                                                                                    | 192.168.3.211             |
    +------------------------------------------------------------------------------------+---------------------------+
 
-#. **Application Health**
-
-   - Use the pulldown to select a standard https monitor
-
-#. Press the **Finished** button
-
-View the objects which were created by the iApp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#. Select the Components tab at the top of the page
-
-#. Is the Virtual server available?
-
-#. Are the pool members available?
-
-#. Is the Node Available?
-
-#. Review the remaining parameters (any questions)
-
-Test the Security Server load balancing using both VMware View client and browser access methods
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#.  From "home-pc"
-
-#.  Open View client and connect to the Virtual Server just created with
-    iApp.
-
-    - \+ New Server
-
-      - vmw-LB-SS.demoisfun.net (192.168.3.150)
-
-      - Press the Connect button
-
-      - IP address will not work—Certificate contains demoisfun.net
-
-#.  When prompted for credentials
-
-    - Username: ``demo01``
-
-    - Password: ``password``
-
-#.  Double-click Agility icon to launch desktop
-
-#.  Verify the desktop functions
-
-#.  Close the View client
-
-#.  Open IE and browser to
-
-    - ``https://vmw-LB-SS.demoisfun.net``
-
-#.  Select VMware Horizon View HTML access
-
-#.  Enter Credentials
-
-    - Username: ``demo01``
-
-    - Password: ``password``
-
-#.  Select (Agility)
-
-#.  Accept Cert warning
-
-#.  Select (Agility)
-
-#.  Verify that the desktop functions
-
-#.  Close the browser window
-
-Task 5 – Replace Security Servers and leverage APM as a PCOIP proxy
--------------------------------------------------------------------
-
-This environment will utilize Big-IP as a PCOIP Proxy. This eliminates
-the requirement for all Security Servers. The Connection Servers will be
-load balanced. Authentication is handled by the F5 APM module
-
-|image11|
-
-Figure 6 - Replace Security Servers
-
-**Deploy the iApp**
-
-#. From "corporate-pc"
-
-#. Create a new Application Service by selecting iApps -> Application
-   Services and selecting Create
-
-   - iApps >> Application Services
-
-   - Press the **Create** button
-
-   - Name the Application Service ``VM_LAB_1_PCOIP``
-
-   - Select ``f5.vmware_view.v1.5.1`` for the template
-
-iApp Configuration
-~~~~~~~~~~~~~~~~~~
-
-#. Review the **Welcome to the iAPP template for VMware Horizon View**
-
-#. Note the **Template Options** (leave these default)
-
-#. **BIG-IP Access Policy Manager**
-
-   +--------------------------------------------------------------------------------------+-------------------------------------------------------------+
-   | Do you want to deploy BIG-IP Access Policy Manager?                                  | Yes, deploy BIG-IP Access Policy Manager                    |
-   +======================================================================================+=============================================================+
-   |                                                                                      |                                                             |
-   +--------------------------------------------------------------------------------------+-------------------------------------------------------------+
-   | Do you want to support browser based connections, including the View HTML5 client?   | Yes, support HTML 5 view clientless browser connections     |
-   +--------------------------------------------------------------------------------------+-------------------------------------------------------------+
-   | Should the BIG-IP system support RSA SecureID two-factor authentication              | NO, do not support RSA SecureID two-factor authentication   |
-   +--------------------------------------------------------------------------------------+-------------------------------------------------------------+
-   | Should the BIG\_IP system show a message to View users during logon                  | No, do not add a message during logon                       |
-   +--------------------------------------------------------------------------------------+-------------------------------------------------------------+
-   | What is the NetBIOS domain name for your environment                                 | demoisfun                                                   |
-   +--------------------------------------------------------------------------------------+-------------------------------------------------------------+
-   | Create a new AAA Server object **or select an existing one**                         | AD1                                                         |
-   +--------------------------------------------------------------------------------------+-------------------------------------------------------------+
-
-#. **SSL Encryption (Certs are preloaded for this exercise)**
-
-   +----------------------------------------------------------+--------------------------------------------------------------+
-   | How should the BIG-IP system handle encrypted traffic?   | Terminate SSL for clients, re-encrypt…\ **(SSL-Bridging)**   |
-   +==========================================================+==============================================================+
-   | Which SSL certificate do you want to use?                | wild.demoisfun.net.crt                                       |
-   +----------------------------------------------------------+--------------------------------------------------------------+
-   | Which SSL private key do you want to use?                | wild.demoisfun.net.key                                       |
-   +----------------------------------------------------------+--------------------------------------------------------------+
-
-#. **PC Over IP** (leave these default)
-
-#. **Virtual Servers and Pools**
-
-   +------------------------------------------------------------------------------------+--------------------------------+
-   | What virtual server IP address do you want to use for remote, untrusted clients?   | 192.168.3.152                  |
-   +====================================================================================+================================+
-   | What FQDN will clients use to access the View environment?                         | vmw-PROXY-VIEW.demoisfun.net   |
-   +------------------------------------------------------------------------------------+--------------------------------+
-   | Which Servers should be included in this pool?                                     | 192.168.10.212                 |
-   |                                                                                    |                                |
-   |                                                                                    | 192.168.10.213                 |
-   +------------------------------------------------------------------------------------+--------------------------------+
-
-#. **Application Health**
-
-   - Use the pull down to select a standard https monitor
-
-#. Press the **Finished** button
-
-View the objects which were created by the iApp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#. Select the Components tab at the top of the page
-
-#. Note the increase in objects compared to Task 2 and Task 4
-
-#. Are the pool members available?
-
-#. Note the APM objects which were not present in the prior exercises
-
-#. Review the remaining parameters (any questions)
-
-Test the APM (PCoIP) functionality using both VMware View client and browser access methods
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#.  From "home-pc"
-
-#.  Open IE and browse to ``https://vmw-PROXY-VIEW.demoisfun.net``
-
-    - Username: ``demo01``
-
-    - Password: ``password``
-
-#.  Click Agility on APM webtop
-
-#.  Select VMware View Client
-
-#.  Note the error and inspect the certificate
-
-#.  Close the error box and cert view boxes
-
-#.  Close the View client
-
-#.  Open IE and browse to
-
-    - ``https://vmw-PROXY-VIEW.demoisfun.net``
-
-#.  Select VMware Horizon View HTML access
-
-#.  Enter Credentials
-
-    - Username: ``demo01``
-
-    - Password: ``password``
-
-#.  Click Agility
-
-#.  Select HTML5 Client
-
-#.  Verify that the desktop functions
-
-#.  Close the browser
+#
 
 .. |image3| image:: /_static/class1/image5.png
    :width: 5.40625in
