@@ -62,8 +62,6 @@ Accessing Ravello Jump Host
    
 #. Azure GUI Screenshot
 
-   - test
-
    |image102|
 .. |image102| image:: /_static/class1/image102.png
    :width: 5.40625in
