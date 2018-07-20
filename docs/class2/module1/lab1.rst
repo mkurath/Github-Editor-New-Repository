@@ -225,20 +225,6 @@ Review the BIG IP config objects created by the template and build a VIP
       - Local Traffic>>Virtual Servers
       - Create Button in upper right corner
 
-   +---------------------------+----------------------------------------+
-   | Name                      | Azure_Ubuntu_VIP                       |
-   +---------------------------+----------------------------------------+
-   | Addredss                  | 10.0.2.10 <IP Info from Azure Portal>  |
-   +---------------------------+----------------------------------------+
-   | Service Port              | http                                   |
-   +---------------------------+----------------------------------------+
-   | HTTP Profile              | http                                   |
-   +---------------------------+----------------------------------------+
-   | Source Address Translation| auto map                               |
-   +---------------------------+----------------------------------------|
-   | Default Pool              | Azure_Ubuntu_Pool                      |
-   +---------------------------+----------------------------------------+
-
 
 
    |image114|
