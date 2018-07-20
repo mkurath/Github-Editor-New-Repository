@@ -14,6 +14,7 @@ Log on to the Ravello jumphost using the FQDN assigned by the instructor. All wo
 |image3|
 
 Accessing Ravello Jump Host
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. When prompted for credentials
 
@@ -64,14 +65,21 @@ Accessing Ravello Jump Host
 #. Check the “I Agree” box in front of the terms and conditions
 #. Select the “Purchase” button
 
+
    |image102|
 .. |image102| image:: /_static/class1/image102.png
    :width: 5.40625in
    :height: 10.04167in
    
+#. This will take about 15 minutes –
+   - You can monitor deployment on the azure dashboard by opening the Notifications in the azure portal
 
-#. Press the **Finished** button
-
+   |image103|
+.. |image103| image:: /_static/class1/image103.png
+   :width: 3.40625in
+   :height: 1.04167in
+   
+   - Continue with the Lab. The deployment will complete by the time the BIG-IP configuration is required
 View the objects which were created by the iApp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
