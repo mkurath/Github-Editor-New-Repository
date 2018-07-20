@@ -72,8 +72,8 @@ Accessing Ravello Jump Host
 #. Continue with the Lab. The deployment will complete by the time the BIG-IP configuration is required
 
 
-VInstall a Linux Server in Azure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Install a Linux Server in Azure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Navigate to the Azure Marketplace and select Create a Resource
 #. Select Ubuntu Server 17.10 VM
@@ -86,8 +86,7 @@ VInstall a Linux Server in Azure
    | Name                   | F5Ubuntux-student#  |
    +------------------------+---------------------+
    | VM disk type            | HDD                |
-
-+------------------------+---------------------+
+   +------------------------+---------------------+
    | Admin Username         | azureuser           |
    +------------------------+---------------------+
    | Admin Password         | ChangeMeNow123      |
@@ -120,8 +119,8 @@ VInstall a Linux Server in Azure
    - Select the “OK” button
 
    |image107|
-   
-3. Create the machine
+
+#. Create the machine
  
    - Review the configuration
    - Select the “Create” button
