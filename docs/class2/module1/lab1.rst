@@ -148,7 +148,7 @@ Install Apache Web Server on the Linux Server in Azure
    - sudo apt-get update
    - sudo apt-get install apache2
 
-Use the Azure portal to gather IP information about the systems uou hqave built
+Use the Azure portal to gather IP information about the systems you have built
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. Access the Azure Portal to find the IP address on the internal network of the Ubuntu Server
 
@@ -178,23 +178,78 @@ Use the Azure portal to gather IP information about the systems uou hqave built
    - Note External Self IP mapped to 10.0.2.10 (this will be used to access the VIP created on the BIG-IP)
 
    |image112|
- 
- 
- 
- 
- Test the connection server load balancing using both VMware View client and browser access methods. 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
 
-
-
-
-
-
-
-
-
-Disregard everything below this line --- except image definitions at bottom
+Review the BIG IP config objects created by the template and build a VIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. Access the BIG-IP management GUI
+
+   - https://<Public-IP-of-Management>
+   - Username: azureuser
+   - Password: ChangeMeNow123
+
+#. Inspect the configuration of the BIG-IP
+
+   - The github template has built the base configuration 
+   - System>>License
+   - Network>>Self IPs
+   - Network>>VLANs
+ 
+
+#. Create a pool with the Ubuntu Server as a member (Note that we only created a single web server. Typically there would be multiple members in the pool)
+
+   - Local Traffic>>Pools
+   - Create Button in upper right corner
+   
+   +------------------------+----------------------------------------+
+   | Name                   | Azure_Ubuntu_Pool                      |
+   +------------------------+----------------------------------------+
+   | Health Monitors        | http                                   |
+   +------------------------+----------------------------------------+
+   | Address                | 10.0.3.5  <IP Info from Azure Portal>  |
+   +------------------------+----------------------------------------+
+   | Service Port           | http                                   |
+   +------------------------+----------------------------------------+
+
+
+   - Click the "Add" button
+    -Click the "finished" button
+
+   |image113.png|
+
+#.Create a Virtual Server using the Azure_Ubuntu_Pool
+
+   - Local Traffic>>Virtual Servers
+   - Create Button in upper right corner
+   
+   +----------------------------+--------------------------------------+
+   | Name                       | Azure_Ubuntu_VIP                     |
+   +----------------------------+--------------------------------------+
+   | Destination Addres         |10.0.2.10 <IP Info from Azure Portal> |
+   +----------------------------+--------------------------------------+
+   | Service Port	           | http                                 |
+   +----------------------------+--------------------------------------+
+   | HTTP Profile               | http                                 |
+   +----------------------------+--------------------------------------+
+   | Source Address Translation | auto map                             |
+   +----------------------------+--------------------------------------+
+   | Default Pool               | Azure_Ubuntu_Poolx-student#-rg       |
+   +----------------------------+--------------------------------------+
+  
+   - Finished Button
+
+|image114|
+
+ Disregard everything below this line --- except image definitions at bottom
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+
+
+
+
+
+
+
 
 #.  From "corporate-pc"
 
@@ -402,6 +457,12 @@ Figure 5 - Load balance Security Servers
 .. |image112| image:: /_static/class1/image112.png
    :width: 6.67708in
    :height: 7.35417in
+.. |image113| image:: /_static/class1/image113.png
+   :width: 6.67708in
+   :height: 5.35417in
+.. |image114| image:: /_static/class1/image114.png
+   :width: 6.67708in
+   :height: 9.35417in
 .. |image3| image:: /_static/class1/image3.png
    :width: 5.40625in
    :height: 3.04167in
