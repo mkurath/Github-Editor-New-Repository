@@ -29,9 +29,7 @@ Accessing Ravello Jump Host
    - Click PAYG Deploy to Azure
 
    |image101|
-.. |image101| image:: /_static/class1/image101.png
-   :width: 5.40625in
-   :height: 6.04167in
+
 
 #. You will be redirected to portal.azure.com]
    -Log into the azure portal when prompted
@@ -290,7 +288,9 @@ Figure 5 - Load balance Security Servers
    +------------------------------------------------------------------------------------+---------------------------+
 
 #
-
+.. |image101| image:: /_static/class1/image101.png
+   :width: 5.40625in
+   :height: 6.04167in
 .. |image103| image:: /_static/class1/image103.png
    :width: 3.40625in
    :height: 1.04167in
