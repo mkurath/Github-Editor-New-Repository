@@ -122,6 +122,7 @@ VInstall a Linux Server in Azure
    |image107|
    
 3. Create the machine
+
    - Review the configuration
    - Select the “Create” button
 
@@ -130,21 +131,53 @@ VInstall a Linux Server in Azure
 Install Apache Web Server on the Linux Server in Azure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. Access the Azure Portal to find the external IP address of the Ubuntu Server
+
    - Resource Groups
    - Select your Resource Group
    - Identify the Object with the Ubuntu Public IP address
 
    |image109|
 
-#. Use the pull down next to Application Service:
+#. SSH to the Apache Server 
 
-#. Select Advanced
+   - Open the Terminal window on the jumphost
+   - ssh  azureuser@<Ubuntu public IP Address>
+   - Password: ChangeMeNow123
+   
+#. Use the following Commands to install Apache Web server
 
-#. Note the check in Strict Updates
+   - sudo apt-get update
+   - sudo apt-get install apache2
 
-   - Is this related to the screen when editing the persistence profile?
+Build a VIP on the BIG-IP 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#. Access the Azure Portal to find the IP address on the internal network of the Ubuntu Server
+   - Resource Groups
+   - Select your Resource Group
+   - Identify the object with the Ubuntu Network Interface 
+   - Note the IP-Address <10.0.3.5>
 
-   - What are the pro’s and con’s of unchecking this parameter?
+   |image110|
+
+#. Access the Azure Portal to find the public IP address assigned to the F5 management interface. 
+   - Resource Groups
+   - Select your Resource Group
+   - Identify the Object with the BIG-IP Management Interface x-student#-mgmt
+   - Note Public IP mapped to the management interface
+
+   |image111|
+
+
+
+
+
+
+
+
+
+
+
+
 
 Test the connection server load balancing using both VMware View client and browser access methods. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -346,12 +379,12 @@ Figure 5 - Load balance Security Servers
 .. |image109| image:: /_static/class1/image109.png
    :width: 6.29861in
    :height: 6.88819in
-.. |image10| image:: /_static/class1/image12.png
-   :width: 4.63542in
-   :height: 3.06250in
-.. |image11| image:: /_static/class1/image13.png
-   :width: 5.67708in
-   :height: 3.35417in
+.. |image110| image:: /_static/class1/image110.png
+   :width: 6.63542in
+   :height: 5.06250in
+.. |image111| image:: /_static/class1/image111.png
+   :width: 6.67708in
+   :height: 5.35417in
 .. |image99| image:: /_static/class1/image5.png
    :width: 5.40625in
    :height: 3.04167in
