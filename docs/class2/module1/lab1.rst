@@ -66,6 +66,10 @@ Accessing Ravello Jump Host
 
    |image103|
 
+
+
+
+
 #. Continue with the Lab. The deployment will complete by the time the BIG-IP configuration is required
 
 
@@ -101,12 +105,32 @@ VInstall a Linux Server in Azure
 
    |image105|
    
-#. Highlight B1s
+#. Select the machine type
 
-#. Select Button at the bottom of the page
+   - Highlight B1s
+   - Select Button at the bottom of the page
 
    |image106|
-   
+
+#. Select the machine config parameters
+
+      - Select Subnet
+      - Select the internal subnet
+      - Select SSH in the select public inbound ports
+      - Select the “OK” button
+
+    |image107|
+
+
+
+
+
+
+
+
+
+
+
 View the properties of the iApp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -315,9 +339,9 @@ Figure 5 - Load balance Security Servers
 .. |image106| image:: /_static/class1/image106.png
    :width: 6.32292in
    :height: 3.05208in
-.. |image7| image:: /_static/class1/image9.png
-   :width: 3.15625in
-   :height: 1.29167in
+.. |image107| image:: /_static/class1/image107.png
+   :width: 6.15625in
+   :height: 6.29167in
 .. |image8| image:: /_static/class1/image10.png
    :width: 5.25000in
    :height: 3.18750in
