@@ -256,8 +256,6 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
 
    |image115|
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. Verify that you can connect to the Application 
    - http://<Public-IP mapped to the VIP address>
 
