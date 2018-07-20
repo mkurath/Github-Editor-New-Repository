@@ -151,6 +151,7 @@ Install Apache Web Server on the Linux Server in Azure
 Use the Azure portal to gather IP information about the systems uou hqave built
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. Access the Azure Portal to find the IP address on the internal network of the Ubuntu Server
+
    - Resource Groups
    - Select your Resource Group
    - Identify the object with the Ubuntu Network Interface 
@@ -158,7 +159,8 @@ Use the Azure portal to gather IP information about the systems uou hqave built
 
    |image110|
 
-#. Access the Azure Portal to find the public IP address assigned to the F5 management interface. 
+#. Access the Azure Portal to find the public IP address assigned to the F5 management interface.
+
    - Resource Groups
    - Select your Resource Group
    - Identify the Object with the BIG-IP Management Interface x-student#-mgmt
@@ -167,6 +169,7 @@ Use the Azure portal to gather IP information about the systems uou hqave built
    |image111|
 
 #. Access the Azure Portal to find the NAT IP address assigned to the external F5 interface. 
+
    - Resource Groups
    - Select your Resource Group
    - Identify the Object with the BIG-IP External Interface x-student#bigip-ext
