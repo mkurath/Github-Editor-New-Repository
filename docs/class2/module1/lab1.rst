@@ -155,6 +155,8 @@ Use the Azure portal to gather IP information about the systems you have built
    - Resource Groups
    - Select your Resource Group
    - Identify the object with the Ubuntu Network Interface 
+   - Click the "Add" button
+   - Click the "finished" button
    - Note the IP-Address <10.0.3.5>
 
    |image110|
@@ -209,6 +211,9 @@ Review the BIG IP config objects created by the template and build a VIP
    +------------------------+----------------------------------------+
    | Service Port           | http                                   |
    +------------------------+----------------------------------------+
+   
+   - Click the "Add" button
+   - Click the "finished" button
 
 
    |image113|
