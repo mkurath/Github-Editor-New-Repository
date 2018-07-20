@@ -25,8 +25,7 @@ Figure 2 - Accessing Internal View Desktop
 #.	Size the window
 #. Browse to Github to access the F5 – Azure templates
    - https://github.com/F5Networks/f5-azure-arm-templates
-   - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs
-   - Click PAYG Deploy to Azure
+   - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs   - Click PAYG Deploy to Azure
    
    |image101|
 .. |image101| image:: /_static/class1/image101.png
@@ -60,7 +59,8 @@ Figure 2 - Accessing Internal View Desktop
    |Timezone                | UTC                 |
    +------------------------+---------------------+ 
    
-   
+#. Azure GUI Screenshot
+
    |image102|
 .. |image102| image:: /_static/class1/image102.png
    :width: 5.40625in
