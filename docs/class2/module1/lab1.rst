@@ -234,7 +234,7 @@ Review the BIG IP config objects created by the template and build a VIP
    +----------------------------+--------------------------------------+
    | Default Pool               | Azure_Ubuntu_Poolx-student#-rg       |
    +----------------------------+--------------------------------------+
-   
+
    - Finished Button
 
    |image114|
