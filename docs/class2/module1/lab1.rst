@@ -62,9 +62,7 @@ Accessing Ravello Jump Host
 #. Select the “Purchase” button
 
    |image102|
-.. |image102| image:: /_static/class1/image102.png
-   :width: 5.40625in
-   :height: 10.04167in
+
 
 #. This will take about 15 minutes –
    - You can monitor deployment on the azure dashboard by opening the Notifications in the azure portal
@@ -291,6 +289,9 @@ Figure 5 - Load balance Security Servers
 .. |image101| image:: /_static/class1/image101.png
    :width: 5.40625in
    :height: 6.04167in
+.. |image102| image:: /_static/class1/image102.png
+   :width: 5.40625in
+   :height: 10.04167in
 .. |image103| image:: /_static/class1/image103.png
    :width: 3.40625in
    :height: 1.04167in
