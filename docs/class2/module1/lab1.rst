@@ -19,14 +19,12 @@ Accessing Ravello Jump Host
 
    - Username: Ubuntu
    - Password: supernetops
-
    - Open the chrome browser
    - Adjust the font size using the Zoom In
    - Size the window
 #. Browse to Github to access the F5 – Azure templates
 
-
-- https://github.com/F5Networks/f5-azure-arm-templates
+   - https://github.com/F5Networks/f5-azure-arm-templates
    - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs
    - Click PAYG Deploy to Azure
 
@@ -64,7 +62,6 @@ Accessing Ravello Jump Host
  
 #. Check the “I Agree” box in front of the terms and conditions
 #. Select the “Purchase” button
-
 
    |image102|
 .. |image102| image:: /_static/class1/image102.png
