@@ -165,6 +165,7 @@ Use the Azure portal to gather IP information about the systems you have built
  
    - Resource Groups
    - Select your Resource Group
+
    - Identify the Object with the BIG-IP Management Interface x-student#-mgmt
    - Note Public IP mapped to the management interface
 
@@ -226,6 +227,15 @@ Review the BIG IP config objects created by the template and build a VIP
       - Local Traffic>>Virtual Servers
       - Create Button in upper right corner
 
+   +---------------------------------------------+---------------------------------------+
+   | Name                                        | Azure_Ubuntu_VIP                      |
+   +---------------------------------------------+---------------------------------------+
+   | Address                                     | 10.0.2.10 <IP Info From Azure Portal> |
+   +---------------------------------------------+---------------------------------------+
+   | Service Port                                | http                                  |
+   +---------------------------------------------+---------------------------------------+
+   | HTTP Profile                                | http                                  |
+   =---------------------------------------------+---------------------------------------+
 
    |image114|
 
