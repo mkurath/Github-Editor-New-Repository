@@ -122,7 +122,7 @@ VInstall a Linux Server in Azure
    |image107|
    
 3. Create the machine
-
+ 
    - Review the configuration
    - Select the “Create” button
 
@@ -149,8 +149,8 @@ Install Apache Web Server on the Linux Server in Azure
    - sudo apt-get update
    - sudo apt-get install apache2
 
-Build a VIP on the BIG-IP 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use the Azure portal to gather IP information about the systems uou hqave built
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. Access the Azure Portal to find the IP address on the internal network of the Ubuntu Server
    - Resource Groups
    - Select your Resource Group
@@ -167,6 +167,18 @@ Build a VIP on the BIG-IP
 
    |image111|
 
+#. Access the Azure Portal to find the NAT IP address assigned to the external F5 interface. 
+   - Resource Groups
+   - Select your Resource Group
+   - Identify the Object with the BIG-IP External Interface x-student#bigip-ext
+   - Select IP configurations in the left panel
+   - Note External Self IP mapped to 10.0.2.4
+   - Note External Self IP mapped to 10.0.2.10 (this will be used to access the VIP created on the BIG-IP)
+
+   |image112|
+   
+ Test the connection server load balancing using both VMware View client and browser access methods. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
 
 
 
@@ -176,10 +188,7 @@ Build a VIP on the BIG-IP
 
 
 
-
-
-
-Test the connection server load balancing using both VMware View client and browser access methods. 
+Disregard everything below this line --- except image definitions at bottom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #.  From "corporate-pc"
