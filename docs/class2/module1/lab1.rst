@@ -172,15 +172,7 @@ Use the Azure portal to gather IP information about the systems you have built
 
 #. Access the Azure Portal to find the NAT IP address assigned to the external F5 interface. 
 
-   +---------------------------------------------+---------------------------------------+
-   | Name                                        | Azure_Ubuntu_VIP                      +
-   +---------------------------------------------+---------------------------------------+
-   | Address                                     | 10.0.2.10 <IP Info From Azure Portal> |
-   +---------------------------------------------+---------------------------------------|
-   | Service Port                                | http                                  |
-   +---------------------------------------------+---------------------------------------+
-   | HTTP Profile                                | http                                  |
-   =---------------------------------------------+---------------------------------------+
+
    - Resource Groups
    - Select your Resource Group
    - Identify the Object with the BIG-IP External Interface x-student#bigip-ext
