@@ -195,48 +195,9 @@ Review the BIG IP config objects created by the template and build a VIP
    - Network>>VLANs
  
 
-#. Create a pool with the Ubuntu Server as a member (Note that we only created a single web server. Typically there would be multiple members in the pool)
-
-   - Local Traffic>>Pools
-   - Create Button in upper right corner
-   
-   +------------------------+----------------------------------------+
-   | Name                   | Azure_Ubuntu_Pool                      |
-   +------------------------+----------------------------------------+
-   | Health Monitors        | http                                   |
-   +------------------------+----------------------------------------+
-   | Address                | 10.0.3.5  <IP Info from Azure Portal>  |
-   +------------------------+----------------------------------------+
-   | Service Port           | http                                   |
-   +------------------------+----------------------------------------+
-
-   - Click the "Add" button
-   - Click the "finished" button
-
-   |image113|
-
-#. Create a Virtual Server using the Azure_Ubuntu_Pool
-
-   - Local Traffic>>Virtual Servers
-   - Create Button in upper right corner
-   
-   +---------------------------+----------------------------------------+
-   | Name                      | Azure_Ubuntu_VIP                       |
-   +---------------------------+----------------------------------------+
-   | Addredss                  | 10.0.2.10 <IP Info from Azure Portal>  |
-   +---------------------------+----------------------------------------+
-   | Service Port              | http                                   |
-   +---------------------------+----------------------------------------+
-   | HTTP Profile              | http                                   |
-   +---------------------------+----------------------------------------+
-   | Source Address Translation| auto map                               |
-   +---------------------------+----------------------------------------|
-   | Default Pool              | Azure_Ubuntu_Poolx-student#-rg         |
-   +---------------------------+----------------------------------------+
-
-   - Finished Button
 
    |image114|
+
 
 
  Disregard everything below this line --- except image definitions at bottom
