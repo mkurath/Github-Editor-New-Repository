@@ -1,4 +1,5 @@
 
+
 Lab 1.1: Deploy a BYOL BIG-IP in azure with 3 NIC’s
 ==================================
 
@@ -59,8 +60,9 @@ Accessing Ravello Jump Host
    +------------------------+---------------------+
    |Timezone                | UTC                 |
    +------------------------+---------------------+ 
-   
-#. Azure GUI Screenshot
+ 
+#. Check the “I Agree” box in front of the terms and conditions
+#. Select the “Purchase” button
 
    |image102|
 .. |image102| image:: /_static/class1/image102.png
