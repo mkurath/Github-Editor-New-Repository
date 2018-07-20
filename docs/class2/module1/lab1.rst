@@ -210,7 +210,6 @@ Review the BIG IP config objects created by the template and build a VIP
    | Name                   | Azure_Ubuntu_Pool                      |
    +------------------------+----------------------------------------+
    | Health Monitors        | http                                   |
-
    +------------------------+----------------------------------------+
    | Address                | 10.0.3.5  <VIP Info from Azure Portal> |
    +------------------------+----------------------------------------+
@@ -245,9 +244,22 @@ Review the BIG IP config objects created by the template and build a VIP
 
    |image114|
 
+Add an ACL in the Azure portal to permit HTTP traffic to the VIP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. Access the Azure Portal to add a permit statement to the external ACL
+   - Resource Groups
+   - Select your Resource Group
+   - Identify the Object with the BIG-IP Network Security **x-student#bigip-ext-nsg** 
+   - Select Inbound Security Rules
+   - Press the +Add button at the top of the page
+   - Create a rule permitting destination port 80
+	- Destination Port Ranges	80
+	- Name				Port_80
+   - Press the Add button at the bottom of the window
 
 
- Disregard everything below this line --- except image definitions at bottom
+Disregard everything below this line --- except image definitions at bottom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
 
