@@ -10,7 +10,6 @@ In this lab you will build an F5 BIG-IP using a publicly available github templa
 
 Log on to the Ravello jumphost using the FQDN assigned by the instructor. All work in this lab will be done from the jumphost using the Browser and Terminal functions. 
 
-
 |image3|
 
 Accessing Ravello Jump Host
@@ -30,7 +29,7 @@ Accessing Ravello Jump Host
 - https://github.com/F5Networks/f5-azure-arm-templates
    - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs
    - Click PAYG Deploy to Azure
-   
+
    |image101|
 .. |image101| image:: /_static/class1/image101.png
    :width: 5.40625in
