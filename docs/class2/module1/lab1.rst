@@ -159,7 +159,7 @@ Use the Azure portal to gather IP information about the systems you have built
    |image110|
 
 #. Access the Azure Portal to find the public IP address assigned to the F5 management interface.
-
+ 
    - Resource Groups
    - Select your Resource Group
    - Identify the Object with the BIG-IP Management Interface x-student#-mgmt
@@ -201,9 +201,9 @@ Review the BIG IP config objects created by the template and build a VIP
    - Create Button in upper right corner
    
    +------------------------+----------------------------------------+
-   | Name                   | Azure_Ubuntu_Pool                       |
+   | Name                   | Azure_Ubuntu_Pool                      |
    +------------------------+----------------------------------------+
-   | Health Monitors   | http                                   |
+   | Health Monitors        | http                                   |
    +------------------------+----------------------------------------+
    | Address                | 10.0.3.5  <IP Info from Azure Portal>  |
    +------------------------+----------------------------------------+
@@ -220,29 +220,19 @@ Review the BIG IP config objects created by the template and build a VIP
    - Local Traffic>>Virtual Servers
    - Create Button in upper right corner
    
-   +------------------------+----------------------------------------+
-   | Name                   | Azure_Ubuntu_VIP                       |
-   +------------------------+----------------------------------------+
-   | Addredss               | 10.0.2.10 <IP Info from Azure Portal>  |
-   +------------------------+----------------------------------------+
-   | Service Port           | http                                   |
-   +------------------------+----------------------------------------+
-   | SHTTP Profile          | http                                   |
-   +------------------------+----------------------------------------+
-   
-   +----------------------------+--------------------------------------+
-   | Name                       | Azure_Ubuntu_VIP                     |
-   +----------------------------+--------------------------------------+
-   | Destination Addres         |10.0.2.10 <IP Info from Azure Portal> |
-   +----------------------------+--------------------------------------+
-   | Service Port	           | http                                 |
-   +----------------------------+--------------------------------------+
-   | HTTP Profile               | http                                 |
-   +----------------------------+--------------------------------------+
-   | Source Address Translation | auto map                             |
-   +----------------------------+--------------------------------------+
-   | Default Pool               | Azure_Ubuntu_Poolx-student#-rg       |
-   +----------------------------+--------------------------------------+
+   +---------------------------+----------------------------------------+
+   | Name                      | Azure_Ubuntu_VIP                       |
+   +---------------------------+----------------------------------------+
+   | Addredss                  | 10.0.2.10 <IP Info from Azure Portal>  |
+   +---------------------------+----------------------------------------+
+   | Service Port              | http                                   |
+   +---------------------------+----------------------------------------+
+   | HTTP Profile              | http                                   |
+   +---------------------------+----------------------------------------+
+   | Source Address Translation| auto map                               |
+   +---------------------------+----------------------------------------|
+   | Default Pool              | Azure_Ubuntu_Poolx-student#-rg         |
+   +---------------------------+----------------------------------------+
 
    - Finished Button
 
