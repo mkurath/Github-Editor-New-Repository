@@ -43,8 +43,7 @@ Accessing Ravello Jump Host
    +------------------------+---------------------+
    | Location               | East US             |
    +------------------------+---------------------+
-   | Admin Username         | azureuser           |
-   +------------------------+---------------------+
+   | Admin Username         | azureuser           |   +------------------------+---------------------+
    | Admin Password         | ChangeMeNow123      |
    +------------------------+---------------------+
    | DNS Label              | x-student#BIGIP     |
@@ -85,7 +84,7 @@ Install a Linux Server in Azure
    +------------------------+---------------------+
    | Name                   | F5Ubuntux-student#  |
    +------------------------+---------------------+
-   | VM disk type            | HDD                |
+   | VM disk type           | HDD                 |
    +------------------------+---------------------+
    | Admin Username         | azureuser           |
    +------------------------+---------------------+
@@ -202,7 +201,7 @@ Review the BIG IP config objects created by the template and build a VIP
    - Create Button in upper right corner
    
    +------------------------+----------------------------------------+
-   | Name                   | Azure_Ubuntu_Pool                      |
+   | Name                   | Azure_Ubuntu_VIP                       |
    +------------------------+----------------------------------------+
    | Health Monitors        | http                                   |
    +------------------------+----------------------------------------+
@@ -214,7 +213,7 @@ Review the BIG IP config objects created by the template and build a VIP
    - Click the "Add" button
    - Click the "finished" button
 
-   |image113.png|
+   |image113|
 
 #. Create a Virtual Server using the Azure_Ubuntu_Pool
 
