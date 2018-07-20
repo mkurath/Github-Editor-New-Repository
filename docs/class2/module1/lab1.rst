@@ -210,6 +210,7 @@ Review the BIG IP config objects created by the template and build a VIP
    | Name                   | Azure_Ubuntu_Pool                      |
    +------------------------+----------------------------------------+
    | Health Monitors        | http                                   |
+
    +------------------------+----------------------------------------+
    | Address                | 10.0.3.5  <VIP Info from Azure Portal> |
    +------------------------+----------------------------------------+
@@ -217,7 +218,7 @@ Review the BIG IP config objects created by the template and build a VIP
    +------------------------+----------------------------------------+
    
    - Click the "Add" button
-   - Click the "finished" button
+   - Click the "Finished" button
 
 
    |image113|
@@ -240,6 +241,8 @@ Review the BIG IP config objects created by the template and build a VIP
    +---------------------------------------------+---------------------------------------+
    | Default Pool                                | Azure_Ubuntu_pool                     |
    +---------------------------------------------+---------------------------------------+
+
+   -Click the "Finished" button
 
    |image114|
 
