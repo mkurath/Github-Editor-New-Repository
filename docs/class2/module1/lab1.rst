@@ -147,6 +147,7 @@ Install Apache Web Server on the Linux Server in Azure
    - sudo apt-get update
    - sudo apt-get install apache2
 
+
 Use the Azure portal to gather IP information about the systems you have built
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. Access the Azure Portal to find the IP address on the internal network of the Ubuntu Server
@@ -193,7 +194,13 @@ Review the BIG IP config objects created by the template and build a VIP
    - System>>License
    - Network>>Self IPs
    - Network>>VLANs
- 
+
+#. Create a pool with the Ubuntu Server as a member (Note that we only created a single web server. Typically there would be multiple members in the pool)
+
+   - Local Traffic>>Pools
+   - Create Button in upper right corner
+
+
    |image113|
 
    |image114|
