@@ -211,17 +211,16 @@ Review the BIG IP config objects created by the template and build a VIP
    | Service Port           | http                                   |
    +------------------------+----------------------------------------+
 
-
    - Click the "Add" button
-    -Click the "finished" button
+   - Click the "finished" button
 
    |image113.png|
 
-#.Create a Virtual Server using the Azure_Ubuntu_Pool
+#. Create a Virtual Server using the Azure_Ubuntu_Pool
 
    - Local Traffic>>Virtual Servers
    - Create Button in upper right corner
-   
+
    +----------------------------+--------------------------------------+
    | Name                       | Azure_Ubuntu_VIP                     |
    +----------------------------+--------------------------------------+
@@ -235,10 +234,10 @@ Review the BIG IP config objects created by the template and build a VIP
    +----------------------------+--------------------------------------+
    | Default Pool               | Azure_Ubuntu_Poolx-student#-rg       |
    +----------------------------+--------------------------------------+
-  
+
    - Finished Button
 
-|image114|
+   |image114|
 
  Disregard everything below this line --- except image definitions at bottom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
