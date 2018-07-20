@@ -75,7 +75,7 @@ Accessing Ravello Jump Host
 .. |image103| image:: /_static/class1/image103.png
    :width: 3.40625in
    :height: 1.04167in
-  
+
 #. Continue with the Lab. The deployment will complete by the time the BIG-IP configuration is required
 
 
