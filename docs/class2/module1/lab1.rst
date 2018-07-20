@@ -1,4 +1,4 @@
-
+   
 
 Lab 1.1: Deploy a BYOL BIG-IP in azure with 3 NIC’s
 ==================================
@@ -29,7 +29,6 @@ Accessing Ravello Jump Host
    - Click PAYG Deploy to Azure
 
    |image101|
-
 
 #. You will be redirected to portal.azure.com]
    -Log into the azure portal when prompted
@@ -63,12 +62,10 @@ Accessing Ravello Jump Host
 
    |image102|
 
-
 #. This will take about 15 minutes –
    - You can monitor deployment on the azure dashboard by opening the Notifications in the azure portal
 
    |image103|
-
 
 #. Continue with the Lab. The deployment will complete by the time the BIG-IP configuration is required
 
