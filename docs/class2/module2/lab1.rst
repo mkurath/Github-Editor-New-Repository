@@ -93,6 +93,47 @@ In the following steps you will build and run a Docker container called agility2
     - Note the URI for the VIP which was created
    |image202|
 
+#. Inspect the objects created in the Azure environment
+
+Let’s take a look at what was built by the process in Azure. This section will focus on the IP address and ACL implementation. By default, Azure provides restrictive ACLs and NAT functionality to secure the deployment.  Review any other objects of interest. No changes to the configuration will be required. 
+
+   - Access the Azure portal
+   - https://portal.azure.com 
+    - Username: x-student#@f5custlabs.onmicrosoft.com
+    - Password: ChangeMeNow123
+   - Gather information about the Management port on the BIG-IP 
+   - Resource Groups
+   - Inspect the BIG-IP virtual machine object
+    - f5vm01
+   - Inspect the object which contains the BIG-IP management address
+    -x-student#-mgmt-pip
+   - Note the Public IP Address    
+    - x-student#-mgmt-nsg
+    - Notice that 443 and 22 are permitted
+    - Notice that only one source IP address is allowed to connect. The allowed IP address is the IP of the Ravello Jump Host used to build the environment    
+   - Inspect the object which contains the external IP mapping
+    - x-student#-ext
+    - Select IP configurations from the panel on the left
+    - Note the Public IP Address and Private IP address associated with x-student#_rg-ext-ipconfig0 -  
+    - You will browse to the VIP associated with Public IP address  to connect  to the application VIP
+    - The Private IP address will be configured as a VIP on the BIG-IP
+    - x-student#-ext-nsg
+    - Notice that ports 443 and 22 are permitted
+    - Notice that only one source IP address is allowed to connect. In a typical environment this would be less restrictive, possibly any.
+   - Inspect the network  address assignments on the 2 Linux servers created by the orchestration script
+    - vm_bodgeit01_inf  	Network interface
+    - vm_bodgeit02_inf	Network interface		
+    - Select IP configurations from the panel on the left
+   - You could  browse to the Public IP address  
+   - The Private IP address will be configured as a pool member on the BIG-IP
+   - Inspect the object which contains the Linux Server access list
+    -vm_bodgeit01_inf  	Network security group
+    - vm_bodgeit02_inf	Network security group
+    - Notice that only port 22 is permitted
+    - Notice that any source IP address is allowed to connect. Typically thos would be much more restrictive
+
+
+
 
 .. |image3| image:: /_static/class1/image3.png
    :width: 3.40625in
