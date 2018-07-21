@@ -97,15 +97,12 @@ In the following steps you will build and run a Docker container called agility2
 .. |image3| image:: /_static/class1/image3.png
    :width: 3.40625in
    :height: 4.04167in
-.. |image201| image:: /_static/class1/image201.png
-   :width: 4.40625in
-   :height:2.04167in
 .. |image202| image:: /_static/class1/image202.png
    :width: 5.40625in
    :height: 10.04167in
-.. |image103| image:: /_static/class1/image103.png
-   :width: 3.40625in
-   :height: 1.04167in
+.. |image201| image:: /_static/class1/image201.png
+   :width: 5.40625in
+   :height: 4.04167in
 .. |image104| image:: /_static/class1/image6.png
    :width: 5.40625in
    :height: 3.04167in
