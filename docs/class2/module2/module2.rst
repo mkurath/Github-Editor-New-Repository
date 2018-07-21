@@ -1,11 +1,8 @@
-Module 2: Solutions for Citrix XenDesktop
-=========================================
+Module 2: Introduction to F5 Orchestration with Ansible
+=======================================================
 
-The purpose of this module is to build out 2 common F5 deployment with
-XenDesktop.
-
-Note: The connectivity in this environment is slower than a typical
-production environment—please be patient
+The purpose of this module is to build an application in Azure including BIG-IP and the associated servers
+t
 
 .. toctree::
    :maxdepth: 1
