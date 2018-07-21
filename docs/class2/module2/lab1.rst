@@ -57,14 +57,14 @@ In the following steps you will build and run a Docker container called agility2
 
   |image201|
 
-   - Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
-   - vi group_vars/all/vault.yml 
-   - Paste the azure variables created in step 5 in and save the file
-   - Delete the empty line between azure_tenant_id ad azure_user
-   - Save - Write the vault.yml file
-   - <esc>:wq
-   - cat group_vars/all/vault.yml
-   -**Troubleshooting tip---If all the values do not populate, the service principal was not created correctly or already exists. If this happens, access the Azure portal to delete the Service Principal for your student ID**
+  - Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
+  - vi group_vars/all/vault.yml 
+  - Paste the azure variables created in step 5 in and save the file
+  - Delete the empty line between azure_tenant_id ad azure_user
+  - Save - Write the vault.yml file
+  - <esc>:wq
+  - cat group_vars/all/vault.yml
+  - **Troubleshooting tip---If all the values do not populate, the service principal was not created correctly or already exists. If this happens, access the Azure portal to delete the Service Principal for your student ID**
     - Login to Azure Portal
     - https://portal.azure.com 
     - USERNAME: x-student#@f5custlabs.onmicrosoft.com
