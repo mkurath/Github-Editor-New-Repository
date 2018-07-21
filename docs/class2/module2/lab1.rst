@@ -26,7 +26,6 @@ Accessing Ravello Jump Host and deploy BIG-IP
    
 Build an run a docker container with ansible playbooks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 In the following steps you will build and run a Docker container called agility2018 which will have Ansible installed. From the Docker container, you will provide the required configuration and authentication credentials to deploy an application into the Azure environment in a fully automated way. 
 
 #. Clone the github repository to the Linux Host
@@ -57,7 +56,7 @@ In the following steps you will build and run a Docker container called agility2
    - ./spCreate.sh
    - Output will look something like.....
    
-      |image201|
+   |image201|
 
    - Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
    - vi group_vars/all/vault.yml 
@@ -76,7 +75,7 @@ In the following steps you will build and run a Docker container called agility2
     - Click on your app  (studentX-app)
     - Click delete
 
-   -Create the vault password file. This file will hold the vault password so that you will not have to input the password on the command line or be prompted for the password when running the playbook.
+    - Create the vault password file. This file will hold the vault password so that you will not have to input the password on the command line or be prompted for the password when running the playbook.
    - echo "@g!l!+y2018" > .vault-pass.txt
    - Encrypt the vault.yml file
    - ansible-vault encrypt group_vars/all/vault.yml
