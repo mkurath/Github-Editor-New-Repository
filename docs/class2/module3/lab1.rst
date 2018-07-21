@@ -1,8 +1,7 @@
-Lab 3.1: Microsoft RDS proxy
+Lab 3.1: Modify the Ansible configuration to re-deploy an HA pair of big-IP’s with the same application environment
 ============================
 
-The purpose of this lab is access an internal RDS server from an
-external client.
+The purpose of this lab is to explore 1 of several approaches to HA. Others will be covered in the lecture portion of the class
 
 Task 1 – Access Terminal Server from external network
 -----------------------------------------------------
