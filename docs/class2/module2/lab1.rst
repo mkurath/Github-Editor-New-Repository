@@ -93,7 +93,8 @@ In the following steps you will build and run a Docker container called agility2
     - Note the URI for the VIP which was created
    |image202|
 
-#. Inspect the objects created in the Azure environment
+Inspect the objects created in the Azure environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let’s take a look at what was built by the process in Azure. This section will focus on the IP address and ACL implementation. By default, Azure provides restrictive ACLs and NAT functionality to secure the deployment.  Review any other objects of interest. No changes to the configuration will be required. 
 
@@ -133,7 +134,17 @@ Let’s take a look at what was built by the process in Azure. This section will
     - Notice that any source IP address is allowed to connect. Typically thos would be much more restrictive
 
 
+Inspect the BIG-IP Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+   - https://<BIG-IP-MGMT-IP-ADDRESS> (from the ansible output or look at the management interface in the Azure portal)
+    - Username: x-student#
+    - Password: ChangeMeNow123
+   - Inspect the VIP on the BIG-IP
+   |image203|  
+   
+   - Inspect the pool on the BIG-IP
+   |image204|
 
 .. |image3| image:: /_static/class1/image3.png
    :width: 3.40625in
@@ -144,10 +155,10 @@ Let’s take a look at what was built by the process in Azure. This section will
 .. |image201| image:: /_static/class1/image201.png
    :width: 5.40625in
    :height: 4.04167in
-.. |image104| image:: /_static/class1/image6.png
+.. |image203| image:: /_static/class1/image203.png
    :width: 5.40625in
    :height: 3.04167in
-.. |image105| image:: /_static/class1/image105.png
+.. |image204| image:: /_static/class1/image204.png
    :width: 4.94792in
    :height: 6.20833in
 .. |image106| image:: /_static/class1/image106.png
