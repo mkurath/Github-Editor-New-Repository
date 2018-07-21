@@ -1,12 +1,16 @@
-201: VDI the F5 Way
+201: F5 Azure Automation 
 ===================
 
-Welcome to “VDI the F5 Way” lab. This guide is intended to complement
-lecture material provided by “VDI the F5 Way” course. The purpose of
-this lab is to demonstrate how F5 technologies can integrate with
-industry leading virtual desktop infrastructure (VDI). In general, we
-will take you through the process of current deployment to a simplified
-and more secure topology with F5 BIG-IP.
+Welcome to “F5 Azure Automation” lab. This guide is intended to complement
+lecture material provided by “F5 Azure Automation” course. This course 
+is run using Gitub, Ansible, Docker, and the Azure portal. 
+
+For lab purposes, F5 utilizes a jump host which is a Linux system loaded with 
+Ansible and Docker. 
+
+This lab is to demonstrate how F5 technologies can integrate with
+the Azure cloyd infrastructure. Lab 1 uses a manual process to build an
+application environment. Labs 2 and 3 use ansible to automate the entire process. 
 
 .. toctree::
    :maxdepth: 1
