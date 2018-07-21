@@ -36,7 +36,6 @@ In the following steps you will build and run a Docker container called agility2
    - Change directory to the azure-f5
    - cd azure-f5
 #. Build Docker container (hint: note the period at the end of the command.  (A space is required after the period for this command to work)
-
    - sudo docker build -t agility2018
    - This step will take about 10 minutes
    - Verify that the agility2018 container exists and look at the other docker containers currently on the system
@@ -55,7 +54,6 @@ In the following steps you will build and run a Docker container called agility2
    - Run bash script to create the Azure Service Principal and Secret
    - ./spCreate.sh
    - Output will look something like.....
-
    |image201|
 
    - Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
