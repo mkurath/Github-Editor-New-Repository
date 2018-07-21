@@ -1,5 +1,4 @@
-       
-
+    
 Lab 1.1: Deploy a BYOL BIG-IP in azure with 3 NIC’s
 ===================================================
 
@@ -11,8 +10,8 @@ Log on to the Ravello jumphost using the FQDN assigned by the instructor. All wo
 
    |image3|
 
-Accessing Ravello Jump Host
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accessing Ravello Jump Host and deploy BIG-IP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. When prompted for credentials
 
@@ -24,7 +23,9 @@ Accessing Ravello Jump Host
 #. Browse to Github to access the F5 – Azure templates
 
    - https://github.com/F5Networks/f5-azure-arm-templates
-   - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure - 3 NICs   - Click PAYG Deploy to Azure
+   - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure 
+    - 3 NICs  
+    - Click PAYG Deploy to Azure
    |image101|
 
 #. You will be redirected to portal.azure.com
