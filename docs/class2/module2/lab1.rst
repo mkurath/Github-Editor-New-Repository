@@ -54,6 +54,7 @@ In the following steps you will build and run a Docker container called agility2
    - Run bash script to create the Azure Service Principal and Secret
    - ./spCreate.sh
    - Output will look something like.....
+
    |image201|
 
    - Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
