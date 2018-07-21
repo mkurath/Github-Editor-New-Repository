@@ -56,7 +56,7 @@ In the following steps you will build and run a Docker container called agility2
    - ./spCreate.sh
    - Output will look something like.....
 
-   |image201|
+   |image103|
 
 #. Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
 
