@@ -338,7 +338,6 @@ Delete the objects you created in this lab
 
 
 
-
 #
 
 .. |image3| image:: /_static/class1/image3.png
@@ -377,13 +376,13 @@ Delete the objects you created in this lab
 .. |image111| image:: /_static/class1/image111.png
    :width: 6.67708in
    :height: 5.35417in
-.. |image112| image:: /_static/class1/image112.png
+.. |image112| image:: /_static/class1/image112.PNG
    :width: 5.67708in
    :height: 7.35417in
 .. |image113| image:: /_static/class1/image113.png
    :width: 6.67708in
    :height: 5.35417in
-.. |image114| image:: /_static/class1/image114.png
+.. |image114| image:: /_static/class1/image114.PNG
    :width: 5.67708in
    :height: 10.35417in
 .. |image115| image:: /_static/class1/image115.png
