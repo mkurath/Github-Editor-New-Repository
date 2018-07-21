@@ -35,10 +35,10 @@ In the following steps you will build and run a Docker container called agility2
    - ls 
    - Change directory to the azure-f5
    - cd azure-f5
-#. Build Docker container (hint: note the period at the end of the command.  (A space is required after the period for this command to work)
+#. Build Docker container (hint: note the period at the end of the command.  
 
-   - sudo docker build -t agility2018
-   - This step will take about 10 minutes
+   - sudo docker build -t agility2018 . **(A space is required after the period for this command to work)**
+   - **This step will take about 10 minutes**
    - Verify that the agility2018 container exists and look at the other docker containers currently on the system
    - sudo docker images
    - Run the Docker container
@@ -87,7 +87,7 @@ In the following steps you will build and run a Docker container called agility2
    - View the contents of group_vars/azure-f5.yml. Note the prefix variable and the various IP addresses. This is the variable input file to the ansible playbook. 
    - 2.2. Run Ansible playbook with deploy_state=present to create deployment
    - ansible-playbook f5agility.yml -e deploy_state=present
-   - This step will take about 20 minutes
+   - **This step will take about 20 minutes**
    - Once complete review the comments on the screen. 
     - Note the URI for BIG-IP management
     - Note the URI for the VIP which was created
