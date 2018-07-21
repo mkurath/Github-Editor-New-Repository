@@ -343,7 +343,7 @@ Delete the objects you created in this lab
 
 .. |image3| image:: /_static/class1/image3.png
    :width: 3.40625in
-   :height:4.04167in
+   :height: 4.04167in
 .. |image101| image:: /_static/class1/image101.png
    :width: 3.40625in
    :height: 4.04167in
