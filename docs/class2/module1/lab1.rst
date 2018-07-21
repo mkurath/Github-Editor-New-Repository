@@ -342,11 +342,11 @@ Delete the objects you created in this lab
 #
 
 .. |image3| image:: /_static/class1/image3.png
-   :width: 5.40625in
-   :height: 6.04167in
+   :width: 3.40625in
+   :height:4.04167in
 .. |image101| image:: /_static/class1/image101.png
-   :width: 5.40625in
-   :height: 6.04167in
+   :width: 3.40625in
+   :height: 4.04167in
 .. |image102| image:: /_static/class1/image102.png
    :width: 5.40625in
    :height: 10.04167in
@@ -354,8 +354,8 @@ Delete the objects you created in this lab
    :width: 3.40625in
    :height: 1.04167in
 .. |image104| image:: /_static/class1/image6.png
-   :width: 5.40625in
-   :height: 3.04167in
+   :width: 4.40625in
+   :height: 2.04167in
 .. |image105| image:: /_static/class1/image105.png
    :width: 4.94792in
    :height: 6.20833in
