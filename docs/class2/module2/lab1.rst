@@ -232,7 +232,7 @@ o	Inspect the BIG-IP virtual machine Network Interface object
    :height: 4.04167in
 .. |image202| image:: /_static/class1/image202.png
    :width: 5.40625in
-   :height: 10.04167in
+   :height: 2.04167in
 .. |image201| image:: /_static/class1/image201.png
    :width: 5.40625in
    :height: 4.04167in
