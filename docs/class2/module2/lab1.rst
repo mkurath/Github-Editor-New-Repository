@@ -145,6 +145,87 @@ Inspect the BIG-IP Configuration
    
    - Inspect the pool on the BIG-IP
    |image204|
+Verify that you can connect to the application through the BIG-IP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. Access the application
+   -http://<Public-IP mapped to the VIP address> (from the ansible output or look at the management interface in the Azure portal)
+
+
+Inspect the Ansible Playbook
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   -Return to the Terminal window
+   - Prompt is now /home/ansible
+   - **If you closed the terminal window, restart the ansible container**
+    -sudo docker ps -a (this will allow you to see the CONTAINER ID)
+    - sudo docker exec -it <CONTAINER ID> /bin/sh
+   - View the variable assignments in the group_vars/azure-f5.yml
+   - cat group_vars/azure-f5.yml
+   - View the f5agility.yml file. This is the Ansible code which controls the execution of the individual playbooks. Playbooks are referred to as roles in this file. 
+   - cd azure-f5
+   - cat f5agility.yml |more
+   - View the directories where the playbooks are stored
+    -cd roles
+    -ls
+   - Inspect a few of the playbooks
+    -cd <subdirectory>/tasks
+    -cat main.yml | more
+    
+Add a VIP to the existing Application environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#. In the following steps we will use Ansible to add a Public to Private IP mapping and create an additional VIP on the BIG-IP
+
+   - Return to the Terminal window
+   - Navigate to  /home/ansible/azure-f5
+   - To add secondary IP to the Azure environment you will run another playbook
+    - ansible-playbook -i notahost, f5agility_add_ip.yml -e deploy_state=present
+•	To create second vip on the existing BIG-IP you will run another playbook
+    - ansible-playbook -i notahost, f5agility_create_vs2.yml -e deploy_state=present
+#. Let’s take a look at the Ansible Playbooks used to create the objects (Public IP in Azure and a VIP on the BIG_IP) 
+
+   -Inspect the following files from the /home/ansible/azure-f5 directory. The first 3 are used to create the Azure components and the second 3 are used to create the VIP on the BIG-IP
+    - f5agility_add_ip.yml
+    - group_vars azure-f5.yml
+     - roles/add_priv_ip/tasks/main.yml
+    - f5agility_create_vs2.yml
+    - group_vars/ipconfigs.yml
+    - roles/create_vs2/tasks/main.yml
+    - roles/add_priv_ip/tasks/main.yml
+#. Let’s take a look at the configuration changes on ther BIG-IP and the Azure environmet
+
+   - Access BIG-IP Management interface
+    - Username: x-student#
+    - Password: ChangeMeNow123
+   - Local Traffic>>Virtual Servers>>Virtual Server List
+   - Note that bodgedit_vs2 is present. IP address 10.0.10.247
+   - Access the Azure portal
+   - https://portal.azure.com 
+    - Username: x-student#@f5custlabs.onmicrosoft.com
+    - Password: ChangeMeNow123
+   -Inspect the external network interface in Azure
+   - Resource Groups
+   - Select your Resource Group  <x-student#_rg>
+o	Inspect the BIG-IP virtual machine Network Interface object
+	x-student#-ext
+	IP Configurations from the tool list on the left of the screen
+	Note the Public IP associated with 10.0.10.247
+
+#. Test the newly created VIP
+   - Open a new browser window
+   - http://<public_IP associated with 10.0.10.247>
+   
+#. Destroy the environment and verify that the objects were deleted
+   - Run the ansible playbook with deploy_state=absent 
+   - ansible-playbook f5agility.yml -e deploy_state=absent
+   - **This step takes about 15 minutes**
+   - Access the Azure portal
+   - https://portal.azure.com 
+    - Username: x-student#@f5custlabs.onmicrosoft.com
+    - Password: ChangeMeNow123
+   - Verify that the Resource group and associated objects is removed
+
+
 
 .. |image3| image:: /_static/class1/image3.png
    :width: 3.40625in
