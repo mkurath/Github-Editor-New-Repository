@@ -1,4 +1,4 @@
-Module 3: Microsoft RDS Proxy
+Module 3: Modify the Ansible configuration to deploy an HA pair of big-IP’s with the same application environment
 =============================
 
 The purpose of this module is access an internal RDS server from an
