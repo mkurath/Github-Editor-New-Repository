@@ -5,30 +5,14 @@ Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
 .. NOTE::
-	 All work for this lab will be performed exclusively from the Windows
+	 All work for this lab will be performed exclusively from the Linux
 	 jumphost. No installation or interaction with your local system is
 	 required.
 
 Lab Network Setup
 ~~~~~~~~~~~~~~~~~
 
-In the interest of focusing as much time as possible on this solution,
-we have provided some resources and basic setup ahead of time. These
-are:
 
--  The system has been licensed and provisioned for LTM and APM
-
--  A Microsoft Active Directory environment has been configured for
-   authentication
-
--  A working VMware Horizon View environment has already been configured
-
--  A working Citrix XenDesktop environment has already been configured
-
--  Windows desktops with Citrix and View clients will be accessed using
-   RDP to demonstrate functionality
-
-|image0|
 
 Connect to Lab Environment 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,23 +30,16 @@ RDP client.
 
 1. Open browser and go to the URL provided by instructor.
 
-2. Scroll down and find “corporate-pc”. Choose to connect with RDP.
+2.  Choose to connect with RDP.
    Leave this connection for entire lab duration.
 
    +------------+---------------------------+
-   | |image1|   | Username: ``agility``     |
+   | |image1|   | Username: ``Ubuntu``      |
    |            |                           |
-   |            | Password: ``F5Agility``   |
+   |            | Password: ``supernetops`` |
    +------------+---------------------------+
 
-1. Scroll down and find “home-pc”. Choose to connect with RDP. Leave
-   this connection for entire lab duration.
 
-   +------------+---------------------------+
-   | |image2|   | Username: ``agility``     |
-   |            |                           |
-   |            | Password: ``F5Agility``   |
-   +------------+---------------------------+
 
 .. |image0| image:: /_static/class1/image2.png
    :width: 7.38542in
