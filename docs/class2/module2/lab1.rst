@@ -24,7 +24,7 @@ Accessing Ravello Jump Host and deploy BIG-IP
    - Adjust the font size using the Zoom In
    - Size the window
    
-Build an run a docker container with ansible playbooks
+Build and run a docker container with ansible playbook
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In the following steps you will build and run a Docker container called agility2018 which will have Ansible installed. From the Docker container, you will provide the required configuration and authentication credentials to deploy an application into the Azure environment in a fully automated way. 
 
@@ -56,7 +56,7 @@ In the following steps you will build and run a Docker container called agility2
    - ./spCreate.sh
    - Output will look something like.....
 
-   |image103|
+   |image201|
 
 #. Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
 
