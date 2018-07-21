@@ -13,7 +13,7 @@ Log on to the Ravello jumphost using the FQDN assigned by the instructor. All wo
 Accessing Ravello Jump Host and deploy BIG-IP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. When prompted for credentials
+#. RDP to the Ravello Jumphost
 
    - Username: Ubuntu
    - Password: supernetops
@@ -24,15 +24,15 @@ Accessing Ravello Jump Host and deploy BIG-IP
 
    - https://github.com/F5Networks/f5-azure-arm-templates
    - Scroll down to the List of F5 ARM templates for Azure deployments to the section titled Deploying the BIG-IP VE in Azure 
-    - 3 NICs  
-    - Click PAYG Deploy to Azure
+   - 3 NICs  
+   - Click PAYG Deploy to Azure
    |image101|
 
 #. You will be redirected to portal.azure.com
 
-   -Log into the azure portal when prompted
-   -Username : x-student#@f5custlabs.onmicrosoft.com
-   -Password:  ChangeMeNow123
+   - Log into the azure portal when prompted
+   - Username : x-student#@f5custlabs.onmicrosoft.com
+   - Password:  ChangeMeNow123
 
 #. Complete the Customized template with the following values **(don’t follow the screen shot)**
 
@@ -316,7 +316,7 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
    | Default Pool                                | Azure_Ubuntu_pool                     |
    +---------------------------------------------+---------------------------------------+
 
- - Finished Button
+   - Finished Button
 
 #. Access the Application
    - http://<Public-IP mapped to the VIP address--this info can be found in the Azure portal>
@@ -352,7 +352,7 @@ Delete the objects you created in this lab
 .. |image103| image:: /_static/class1/image103.png
    :width: 3.40625in
    :height: 1.04167in
-.. |image104| image:: /_static/class1/image6.png
+.. |image104| image:: /_static/class1/image104.png
    :width: 4.40625in
    :height: 2.04167in
 .. |image105| image:: /_static/class1/image105.png
