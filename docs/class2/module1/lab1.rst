@@ -1,5 +1,5 @@
     
-Lab 1.1: Deploy a BYOL BIG-IP in azure with 3 NIC’s
+Lab 1.1: Deploy a BYOL BIG-IP in Azure with 3 NIC’s
 ===================================================
 
 
@@ -319,6 +319,7 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
    - Finished Button
 
 #. Access the Application
+
    - http://<Public-IP mapped to the VIP address--this info can be found in the Azure portal>
 
 Delete the objects you created in this lab
