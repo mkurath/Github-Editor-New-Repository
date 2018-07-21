@@ -23,17 +23,84 @@ Accessing Ravello Jump Host and deploy BIG-IP
    - Open the chrome browser
    - Adjust the font size using the Zoom In
    - Size the window
-#. Browse to Github to access the F5 – Azure templates
+   
+Build an run a docker container with ansible playbooks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#
+In the following steps you will build and run a Docker container called agility2018 which will have Ansible installed. From the Docker container, you will provide the required configuration and authentication credentials to deploy an application into the Azure environment in a fully automated way. 
+
+#. Clone the github repository to the Linux Host
+
+   - git clone https://github.com/ajgerace/azure-f5 
+   - View the contents of the directory. Note the addition of a subdirectory called 
+   - ls 
+   - Change directory to the azure-f5
+   - cd azure-f5
+#. Build Docker container (hint: note the period at the end of the command.  (A space is required after the period for this command to work)
+
+   - sudo docker build -t agility2018
+   - This step will take about 10 minutes
+   - Verify that the agility2018 container exists and look at the other docker containers currently on the system
+   - sudo docker images
+   - Run the Docker container
+   - sudo docker run -it --rm agility2018
+   - Note the change at the prompt. You are now working inside the Docker container
+   - Prompt is now /home/ansible
+   
+#. Clone the github repository to the Docker container (we use different components of the repository inside the container) and build a system using the existing Ansible playbook
+
+   - git clone https://github.com/ajgerace/azure-f5
+   - Create environment variables utilizing the student ID and password provided by the instructor
+   - export AZURE_USERNAME=x-student#@f5custlabs.onmicrosoft.com
+   - export AZURE_PW=ChangeMeNow123
+   - Run bash script to create the Azure Service Principal and Secret
+   - ./spCreate.sh
+   - Output will look something like.....
+   
+      |image201|
+
+   - Create the group_vars/all/vault.yml file with the variables in the black section and verify the contents
+   - vi group_vars/all/vault.yml 
+   - Paste the azure variables created in step 5 in and save the file
+   - Delete the empty line between azure_tenant_id ad azure_user
+   - Save - Write the vault.yml file
+   - <esc>:wq
+   - cat group_vars/all/vault.yml
+   -**Troubleshooting tip---If all the values do not populate, the service principal was not created correctly or already exists. If this happens, access the Azure portal to delete the Service Principal for your student ID**
+    - Login to Azure Portal
+    - https://portal.azure.com 
+    - USERNAME: x-student#@f5custlabs.onmicrosoft.com
+    - Password: ChangeMeNow123
+    - Click on Azure Active Directory
+    - Click App registration
+    - Click on your app  (studentX-app)
+    - Click delete
+
+   -Create the vault password file. This file will hold the vault password so that you will not have to input the password on the command line or be prompted for the password when running the playbook.
+   - echo "@g!l!+y2018" > .vault-pass.txt
+   - Encrypt the vault.yml file
+   - ansible-vault encrypt group_vars/all/vault.yml
+   - View the encrypted vault.yml file 
+   - cat group_vars/all/vault.yml
+   - View the contents of the encrypted vault.yml file 
+   - ansible-vault view group_vars/all/vault.yml
+   - View the contents of group_vars/azure-f5.yml. Note the prefix variable and the various IP addresses. This is the variable input file to the ansible playbook. 
+   - 2.2. Run Ansible playbook with deploy_state=present to create deployment
+   - ansible-playbook f5agility.yml -e deploy_state=present
+   - This step will take about 20 minutes
+   - Once complete review the comments on the screen. 
+    - Note the URI for BIG-IP management
+    - Note the URI for the VIP which was created
+   |image202|
+
 
 .. |image3| image:: /_static/class1/image3.png
    :width: 3.40625in
    :height: 4.04167in
-.. |image101| image:: /_static/class1/image101.png
-   :width: 5.40625in
-   :height: 6.04167in
-.. |image102| image:: /_static/class1/image102.png
+.. |image201| image:: /_static/class1/image201.png
+   :width: 4.40625in
+   :height:2.04167in
+.. |image202| image:: /_static/class1/image202.png
    :width: 5.40625in
    :height: 10.04167in
 .. |image103| image:: /_static/class1/image103.png
