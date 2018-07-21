@@ -1,14 +1,11 @@
-Module 1: Solutions for VMware View
-===================================
+Module 1:  Deploy a BYOL BIG-IP in azure with 3 NIC’s
+=====================================================
 
-The purpose of this lab is to build out 3 basic VMware View
-architectures leveraging F5 load balancing and authentication
-functionality.
+The purpose of this lab is to build  a functional BIG-IP environemnt in Azure
 
--  Construct VMware View implementations with F5 LTM and APM software
-   modules
+-  Use github temlates to deploy BIG-IP
 
--  Familiarize student with F5 iApp templates
+-  Familiarize student Azure Resource Groups, IP configurations, and security groups
 
 Estimated completion time: 60 Minutes
 
