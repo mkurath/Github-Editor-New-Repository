@@ -74,7 +74,7 @@ In the following steps you will build and run a Docker container called agility2
 	 
    - Login to Azure Portal
    - https://portal.azure.com
-   - USERNAME: x-.azure.cstudent#@f5custlabs.onmicrosoft.com
+   - USERNAME: x-student#@f5custlabs.onmicrosoft.com
    - Password: ChangeMeNow123
    - Click on Azure Active Directory
    - Click App registration
