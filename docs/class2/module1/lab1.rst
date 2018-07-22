@@ -173,7 +173,7 @@ Use the Azure portal to gather IP information about the systems you have built
    - Resource Groups
    - Select your Resource Group
    - Identify the Object with the BIG-IP External Interface x-student#bigip-ext
-   - Select IP configurations in the left panel
+   - Select "IP configurations" in the left panel
    - Note External Self IP mapped to 10.0.2.4
    - Note External Self IP mapped to 10.0.2.10 (this will be used to access the VIP created on the BIG-IP)
 
