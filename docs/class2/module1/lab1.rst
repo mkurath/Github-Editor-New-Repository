@@ -273,7 +273,7 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
    - Resource Group
    - x-student#bigip-ext   	Network interface
    - IP configurations
-   - Note that we currently have 4 IP addresses on the 10.0.2.4 segment
+   - Note that we currently have 4 IP addresses on the 10.0.2.0 segment
 
    |image116|
    
