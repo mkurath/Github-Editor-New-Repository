@@ -50,8 +50,8 @@ In the following steps you will build and run a Docker container called agility2
 
    - git clone https://github.com/ajgerace/azure-f5
    - Create environment variables utilizing the student ID and password provided by the instructor
-    - export AZURE_USERNAME=x-student#@f5custlabs.onmicrosoft.com  
-    - export AZURE_PW=ChangeMeNow123
+   - export AZURE_USERNAME=x-student#@f5custlabs.onmicrosoft.com  **insert the correct values in the username**
+   - export AZURE_PW=ChangeMeNow123
    - Run bash script to create the Azure Service Principal and Secret
    - ./spCreate.sh
    - Output will look something like.....
