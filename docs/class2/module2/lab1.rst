@@ -191,14 +191,14 @@ Add a VIP to the existing Application environment
     - ansible-playbook -i notahost, f5agility_create_vs2.yml -e deploy_state=present
 #. Let’s take a look at the Ansible Playbooks used to create the objects (Public IP in Azure and a VIP on the BIG_IP) 
 
-   -Inspect the following files from the /home/ansible/azure-f5 directory. The first 3 are used to create the Azure components and the second 3 are used to create the VIP on the BIG-IP
+   -Inspect the following files from the /home/ansible/azure-f5 directory. The first 4 are used to create the Azure components and the last 3 are used to create the VIP on the BIG-IP
     - f5agility_add_ip.yml
-    - group_vars azure-f5.yml
-     - roles/add_priv_ip/tasks/main.yml
-    - f5agility_create_vs2.yml
+    - group_vars/azure-f5.yml
     - group_vars/ipconfigs.yml
-    - roles/create_vs2/tasks/main.yml
     - roles/add_priv_ip/tasks/main.yml
+    - f5agility_create_vs2.yml
+    - group_vars/azure-f5.yml
+    - roles/create_vs2/tasks/main.yml
 #. Let’s take a look at the configuration changes on ther BIG-IP and the Azure environmet
 
    - Access BIG-IP Management interface
