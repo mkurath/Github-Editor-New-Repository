@@ -84,7 +84,7 @@ In the following steps you will build and run a Docker container called agility2
      	 - Click delete
 
 
-    - Create the vault password file. This file will hold the vault password so that you will not have to input the password on the command line or be prompted for the password when running the playbook.
+#. Create the vault password file. This file will hold the vault password so that you will not have to input the password on the command line or be prompted for the password when running the playbook.
    - echo "@g!l!+y2018" > .vault-pass.txt
    - Encrypt the vault.yml file
    - ansible-vault encrypt group_vars/all/vault.yml
