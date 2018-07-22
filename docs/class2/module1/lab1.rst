@@ -261,6 +261,7 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
    
 #. Verify that you can connect to the Application
 
+   = Open another browser window
    - http://<Public-IP mapped to the VIP address from the Azure portal>
 
 Manually add an external IP to azure and build a VIP
