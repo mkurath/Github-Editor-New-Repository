@@ -283,7 +283,8 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
      - Allocation		Static
      - IP address		10.0.2.20
      - Public IP address	Enabled
-     - Create New
+     - Configure Required Settings
+     - Click "Create New" at the top of the page
      - Name			x-student#bigip-ext-pip20
      - SKU			Basic	
      - Assignment		Static
