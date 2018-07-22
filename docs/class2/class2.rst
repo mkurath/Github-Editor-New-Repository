@@ -9,7 +9,7 @@ For lab purposes, F5 utilizes a jump host which is a Linux system loaded with
 Ansible and Docker. 
 
 This lab is to demonstrate how F5 technologies can integrate with
-the Azure cloyd infrastructure. Lab 1 uses a manual process to build an
+the Azure cloud infrastructure. Lab 1 uses a manual process to build an
 application environment. Labs 2 and 3 use ansible to automate the entire process. 
 
 .. toctree::
