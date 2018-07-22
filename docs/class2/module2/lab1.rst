@@ -192,6 +192,7 @@ Add a VIP to the existing Application environment
 #. Let’s take a look at the Ansible Playbooks used to create the objects (Public IP in Azure and a VIP on the BIG_IP) 
 
    -Inspect the following files from the /home/ansible/azure-f5 directory. The first 4 are used to create the Azure components and the last 3 are used to create the VIP on the BIG-IP
+
     - f5agility_add_ip.yml
     - group_vars/azure-f5.yml
     - group_vars/ipconfigs.yml
@@ -213,16 +214,19 @@ Add a VIP to the existing Application environment
    -Inspect the external network interface in Azure
    - Resource Groups
    - Select your Resource Group  <x-student#_rg>
-o	Inspect the BIG-IP virtual machine Network Interface object
-	x-student#-ext
-	IP Configurations from the tool list on the left of the screen
+   - Inspect the BIG-IP virtual machine Network Interface object
+   - x-student#-ext
+   - IP Configurations from the tool list on the left of the screen
 	Note the Public IP associated with 10.0.10.247
 
 #. Test the newly created VIP
+
    - Open a new browser window
    - http://<public_IP associated with 10.0.10.247>
    
-#. Destroy the environment and verify that the objects were deleted
+Destroy the environment and verify that the objects were deleted
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Run the ansible playbook with deploy_state=absent 
    - ansible-playbook f5agility.yml -e deploy_state=absent
    - **This step takes about 15 minutes**
