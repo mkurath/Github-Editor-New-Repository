@@ -67,19 +67,19 @@ In the following steps you will build and run a Docker container called agility2
    - Save - Write the vault.yml file
    - <esc>:wq
    - cat group_vars/all/vault.yml
-   
-..NOTE::
-              **Troubleshooting tip---If all the values do not populate, the service principal was not 
-              created correctly or already exists. If this happens, access the Azure portal to delete the Service 
-              Principal for your student ID**
-                Login to Azure Portal
-                https://portal.azure.com 
-                USERNAME: x-student#@f5custlabs.onmicrosoft.com
-                Password: ChangeMeNow123
-                Click on Azure Active Directory
-                Click App registration
-                Click on your app  (studentX-app)
-                Click delete
+
+.. NOTE::
+	 Troubleshooting tip---If all the values do not populate, the service
+	 principal was not created correctly or already exists. If this happens, 
+	 access the Azure portal to delete the Service Principal for your student ID
+     Login to Azure Portal
+     https://portal.azure.com 
+     USERNAME: x-student#@f5custlabs.onmicrosoft.com
+     Password: ChangeMeNow123
+     Click on Azure Active Directory
+     Click App registration
+     Click on your app  (studentX-app)
+     Click delete
 
     - Create the vault password file. This file will hold the vault password so that you will not have to input the password on the command line or be prompted for the password when running the playbook.
    - echo "@g!l!+y2018" > .vault-pass.txt
