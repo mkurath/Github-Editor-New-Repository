@@ -5,7 +5,7 @@ The purpose of this lab is to build  a functional BIG-IP environemnt in Azure
 
 -  Use github temlates to deploy BIG-IP
 
--  Familiarize student Azure Resource Groups, IP configurations, and security groups
+-  Access the Azure portal and understand  Azure Resource Groups, IP configurations, and security groups
 
 Estimated completion time: 60 Minutes
 
