@@ -324,9 +324,8 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 
    - http://<Public-IP mapped to the VIP address--this info can be found in the Azure portal>
 
-Delete the objects you created in this lab
+Access the Azure portal to delete the objects you created in this lab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- Right Click on the Resource group and select Delete Resource Group
  
    - Resource Groups
    - Select your Resource Group
