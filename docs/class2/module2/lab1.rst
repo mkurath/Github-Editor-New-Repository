@@ -19,6 +19,7 @@ Accessing Ravello Jump Host and deploy BIG-IP
 #. When prompted for credentials
 
    - Username: Ubuntu
+
    - Password: supernetops
    - Open the chrome browser
    - Adjust the font size using the Zoom In
@@ -72,6 +73,7 @@ In the following steps you will build and run a Docker container called agility2
 	 Troubleshooting tip---If all the values do not populate, the service
 	 principal was not created correctly or already exists. If this happens, 
 	 access the Azure portal to delete the Service Principal for your student ID
+	 
      	 - Login to Azure Portal
      	 - https://portal.azure.com 
      	 - USERNAME: x-student#@f5custlabs.onmicrosoft.com
