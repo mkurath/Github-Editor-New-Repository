@@ -62,6 +62,7 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
    - iApps>>Application Services>>Applications
    - Components
    - Reconfigure
+
    |image303|
 
 #. Inspect the HA components in Azure
@@ -75,7 +76,9 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
    - Resource Groups
    - student#-rg
    - Sort using the Type field to move these objects to the top
+
    |image304|
+
    - Inspect the External Network Security groups associated with each BIG-IP
    - Resource Groups
    - xstudent#-rg
@@ -86,11 +89,15 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
 
    |image305|
    
-#. Destroy the environment and verify that the objects were deleted
-   - Run the ansible playbook with deploy_state=absent 
+Destroy the environment and verify that the objects were deleted
+~~~~~~~~~~~
+
+#. Run the ansible playbook with deploy_state=absent 
+
    - ansible-playbook f5agility.yml -e deploy_state=absent
    - **This step takes about 15 minutes**
-   - Access the Azure portal
+#. Access the Azure portal to verify that the objects have been deleted
+
    - https://portal.azure.com 
    - Username: x-student#@f5custlabs.onmicrosoft.com
    - Password: ChangeMeNow123
