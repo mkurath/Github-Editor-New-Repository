@@ -152,9 +152,8 @@ Use the Azure portal to gather IP information about the systems you have built
    - Resource Groups
    - Select your Resource Group
    - Identify the object with the Ubuntu Network Interface 
-   - Click the "Add" button
-   - Click the "finished" button
-   - Note the IP-Address <10.0.3.5>
+   - Select  "Ip configurations in the left panel
+   - Note the IP-Address <10.0.3.5> (this is the address which will be used as the pool member on the BIG-IP config)
 
    |image110|
 
