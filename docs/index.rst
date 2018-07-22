@@ -4,9 +4,8 @@ F5 Agility Labs - Index
 Welcome
 -------
 
-Welcome to the |classbold| Lab Guide. These labs will instruct
-you on how deploy industry leading virtual desktop solutions utilize F5
-for high availability, optimization, and security. 
+Welcome to the F5 Azure Automation Lab Guide. These labs will instruct
+you on how deploy BIG-IP in the Azure cloud environment
 
 |repoinfo|
 
