@@ -53,6 +53,7 @@ In the following steps you will build and run a Docker container called agility2
    - export AZURE_USERNAME=x-student#@f5custlabs.onmicrosoft.com  **insert the correct values in the username**
    - export AZURE_PW=ChangeMeNow123
    - Run bash script to create the Azure Service Principal and Secret
+   - ch azure-f5
    - ./spCreate.sh
    - Output will look something like.....
 
