@@ -256,7 +256,6 @@ Add an ACL in the Azure portal to permit HTTP traffic to the VIP and test connec
    - Destination Port Ranges	 80
    - Name			        Port_80
    - Press the Add button at the bottom of the window
-
    |image115|
    
 #. Verify that you can connect to the Application
@@ -271,10 +270,10 @@ In this section we will add a new application to the existing BIG-IP.  Since we 
 #. Access the Azure Portal
    
    - Review the existing external interface 
-    - Resource Group
-    - x-student#bigip-ext   	Network interface
-    - IP configurations
-    - Note that we currently have 4 IP addresses on the 10.0.2.4 segment
+   - Resource Group
+   - x-student#bigip-ext   	Network interface
+   - IP configurations
+   - Note that we currently have 4 IP addresses on the 10.0.2.4 segment
 
    |image116|
    
