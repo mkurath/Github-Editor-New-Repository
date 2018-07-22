@@ -185,6 +185,7 @@ Review the BIG IP config objects created by the template and build a VIP
 
 #. Access the BIG-IP management GUI
 
+   - Open another browser window
    - https://<Public-IP-of-Management>
    - Username: azureuser
    - Password: ChangeMeNow123
