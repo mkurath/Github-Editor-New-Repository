@@ -177,6 +177,7 @@ Use the Azure portal to gather IP information about the systems you have built
    - Note External Self IP mapped to 10.0.2.4
    - Note External Self IP mapped to 10.0.2.10 (this will be used to configure the VIP on the BIG-IP)
 
+
    |image112|
 
 Review the BIG IP config objects created by the template and build a VIP
@@ -219,6 +220,7 @@ Review the BIG IP config objects created by the template and build a VIP
    |image113|
    
 #. Create a Virtual Server using the Azure_Ubuntu_Pool
+
    - Local Traffic>>Virtual Servers
    - Create Button in upper right corner
 
