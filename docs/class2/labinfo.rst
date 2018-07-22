@@ -17,13 +17,7 @@ Lab Network Setup
 Connect to Lab Environment 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Please refer to Figure 1. We are simulating internal and external access
-to VDI with 2 Windows desktops. When viewing the “corporate-pc” session,
-imagine you are sitting at your office desk. Likewise, viewing the
-“home-pc” session is like you are sitting at home, or anywhere outside
-of the company network.
-
-The lab is hosted in a cloud provider Ravello. Lab instructors will
+The jumphost used in this lab is hosted in a cloud provider Ravello. Lab instructors will
 provide a URL and a unique student number to access the environment.
 Each attendee is expected to have a computer with a modern browser and a
 RDP client.
