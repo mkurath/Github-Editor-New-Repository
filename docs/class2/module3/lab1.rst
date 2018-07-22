@@ -1,172 +1,76 @@
 Lab 3.1: Modify the Ansible configuration to re-deploy an HA pair of big-IP’s with the same application environment
 ============================
 
-The purpose of this lab is to explore 1 of several approaches to HA. Others will be covered in the lecture portion of the class
+In this lab we will modify the existing Ansible playbook to create an HA environment in Azure. The specific components which will be created are a virtual network in Azure, 2 BIG-IP’s in HA configuration, configure the BIG-IPs, and spin up a few Linux hosts do serve as pool members. The configuration will all be done from a Linux host in the Ravello Cloud. 
 
-Task 1 – Access Terminal Server from external network
------------------------------------------------------
+This lab assumes that you have completed LAB 2 which includes build and run the docker container and creating the credential vault. 
 
-|image15|
+#. Return to the Terminal window
 
-Figure 10 - BIG-IP proxy RDP connection
+   - Prompt is now /home/ansible/azure-f5
+   - Change directory to /home/ansible
+   - sudo docker ps -a (this will allow you to see the CONTAINER ID)
+   - sudo docker exec -i  -t <CONTAINER ID> /bin/sh 
 
-**Deploy the iApp**
+#. Edit group_vars/azure-f5.yml file to enable deployment of A/P BIG-IP cluster.
 
-#. From "corporate-pc"
+   - Change the following variables
+   +----------------+------------------+-------------------+
+   | Variable       | Existing Value   + New Value         |
+   +================+==================+===================+
+   | Deployment     | 2nic             | ha                |
+   +----------------+------------------+-------------------+
+   | extVipAddr1    | 10.10.10.246     | 10.10.1010        |
+   +----------------+------------------+-------------------+
 
-#. Connect to the F5 config GUI
+#3 Let’s take a look at the Ansible Playbooks used to create the objects (BIG-IP, BIG-IP configuration, and Linux servers) instead of running the 2nic playbook, this deployment will run the bigip_ha playbook.
 
-   - ``https://f5-bigip1a.demosifun.net``
+   - View the variable assignments in the group_vars/azure-f5.yml
+   - cat group_vars/azure-f5.yml
+   - View the f5agility.yml file. This is the Ansible code which controls the execution of the individual playbooks. Playbooks are referred to as roles in this file. 
+   - cat f5agility.yml | more
+   - View the directories where the playbooks are stored
+   - ls
+   - Inspect a one or more of the playbooks
+   - cd bigip_ha/tasks
+   - cat main.yml | more
+   - cd /home/ansible/azure-f5
+   
+#. Re-run the Ansible playbook to create the new deployment. A message is displayed to console with the public IP addresses for the BIG-IP management interfaces as well as the virtual server.
 
-   - Username: ``admin``
+   - ansible-playbook f5agility.yml -e deploy_state=present
+   |image301|
 
-   - Password: ``password``
+#. Let’s take a look at the BIG-IP configurations which were created. Access both BIG-IP’s using the information provided in the final comments following the TASK deployment. You can also access this information in the resource group objects on the Azure portal. In this exercise, the main focus will be the HA configuration. 
 
-#. Create an NTLM Machine Account
-
-   - Access >>Authentication>>NTLM>>Machine Account
-
-     +--------------------------+-------------------------+
-     | Name                     | AD1-f5-bigip1a          |
-     +==========================+=========================+
-     | Machine Account Name     | f5-bigip1a              |
-     +--------------------------+-------------------------+
-     | Domain FQDN              | demoisfun.net           |
-     +--------------------------+-------------------------+
-     | Domain Controller FQDN   | dif-ad1.demoisfun.net   |
-     +--------------------------+-------------------------+
-     | Admin User               | administrator           |
-     +--------------------------+-------------------------+
-     | Password                 | password                |
-     +--------------------------+-------------------------+
-
-#. Click the **JOIN** button to create the machine account
-
-#. Create a new Application Service by selecting iApps -> Application
-   Services and selecting Create
-
-   - iApps >> Application Services
-
-   - Press the **Create** button
-
-   - Name the Application Service ``VM_LAB_3_RDS``
-
-   - Select ``f5.microsoft_rds_remote_access.v1.0.2`` for the
-      template
-
-iApp Configuration
-~~~~~~~~~~~~~~~~~~
-
-#. Review the **Welcome to the iApp template for Remote Desktop
-   Gateway**
-
-#. **Template Options**
-
-   +-----------------------------------------------------+--------------------------------------------+
-   | Do you want to deploy BIG-IP APM as an RDP proxy?   | Yes, deploy BIG-IP Access Policy Manager   |
-   +-----------------------------------------------------+--------------------------------------------+
-
-#. **Access Policy Manager**
-
-   +--------------------------------------------------------------------------+------------------+
-   | Do you want to create a new AAA server, or use an existing AAA server?   | AD1              |
-   +==========================================================================+==================+
-   | Which NTLM machine account should be used for Kerberos delegation?       | AD1-f5-bigip1a   |
-   +--------------------------------------------------------------------------+------------------+
-
-#. **SSL Encryption**
-
-   +---------------------------------------------+--------------------------+
-   | Which SSL certificate do you want to use?   | wild.demoisfun.net.crt   |
-   +=============================================+==========================+
-   | Which SSL private key do you want to use?   | wild.demoisfun.net.key   |
-   +---------------------------------------------+--------------------------+
-
-#. **Virtual Servers and Pools**
-
-   +-----------------------------------------------------------------+------------------+
-   | What IP address do you want to use for the virtual server(s)?   | 192.168.3.156    |
-   +=================================================================+==================+
-   | How would you like to secure your hosts?                        | Allow any host   |
-   +-----------------------------------------------------------------+------------------+
-
-#. Press the **Finished** button
-
-Test the RDS proxy functionality using RDS Client
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#. From "home-pc"
-
-#. Launch RDS client (on desktop).
-
-   - Select the "Show Options" Pulldown
-
-   - Select the "Advanced" tab
-
-   - Click the Settings button
-
-   - In the "RDS Gateway..." window,
-
-     -  In Server name field, type in ``msft-proxy-rds.demoisfun.net``.
-        Note this address resolves to the address ``192.168.3.156`` which
-        was configured in the iApp
-
-        |image16|
-
-     -  Verify the other default settings on this window
-
-     -  Click OK
-
-#. Under "General" tab, in the "Computer" field, type in the name of the
-   host you want to RDP to which is ``dif-termsvr.demoisfun.net``
-
-   - In the "User name" field, type in ``demoisfun\demo01``
-
-     |image17|
-
-   - Click "Save"
-
-   - Click "Connect"
-
-#. When prompted for credentials
-
-   - Username: ``demo01``
-
-   - Password: ``password``
-
-#. Accept Certificate warning
-
-   |image18|
-
-#. You are connected to dif-termsvr.demoisfun.net
-
-#. From "corporate-pc", open IE to Connect to BIG-IP GUI at
-
-   - ``https://f5-bigip1a.demoisfun.net``
-
-#. On the left side menu, click Access -> Overview -> Active Sessions
-
-#. Click on the session to view details
-
-   |image19|
-
-#. Log off using the windows start icon in the lower left corner
+   - Access BIG-IP Management interface
+   - https://<BIG-IP-MGMT-IP-ADDRESS> (Obtain this info from the ansible output or the Azure portal)
+   - Username: x-student#
+   - Password: ChangeMeNow123
+   - Determine which BIG-IP is active and perform the following on the GUI
+   - Device Management>>Devices
+   - Failover Objects
+   - Note bodgeit_srvc_dscvry
+   - Properties
+   - Force to Standby
+   - Confirm operation by selecting Force to Standby again
+   
+#. Note that while the HA configuration on the BIG-IP in Azure is very similar to traditional HA configurations in an on prem data center, the operation is different. In Azure, an Azure API is triggered when a failover occurs. The public IP associated with a VIP is only assigned to the external network on the active member of the HA pair. Failover time can be greater than 30 seconds when using this method 
 
 FINAL GRADE
 ~~~~~~~~~~~
-
-…for this "VDI the F5 Way" lab team. Please complete the **SURVEY** to
+Thank you for participating this "F5 Azure Automation" lab. Please complete the **SURVEY** to
 let us know how we did. We value your feedbacks and continuously looking
 for ways to improve.
 
 **THANK YOU FOR CHOOSING F5 !!!**
 
-.. |image15| image:: /_static/class1/image17.png
-   :width: 5.58333in
-   :height: 2.96875in
-.. |image16| image:: /_static/class1/image18.png
-   :width: 3.25126in
-   :height: 3.65672in
+.. |image3| image:: /_static/class1/image3.png
+   :width: 3.58333in
+   :height:4.96875in
+.. |image301| image:: /_static/class1/image301.png
+   :width: 6.25126in
+   :height: 2.65672in
 .. |image17| image:: /_static/class1/image19.png
    :width: 3.28358in
    :height: 3.79055in
