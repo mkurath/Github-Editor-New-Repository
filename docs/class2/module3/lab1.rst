@@ -49,13 +49,52 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
    - Password: ChangeMeNow123
    - Determine which BIG-IP is active and perform the following on the GUI
    - Device Management>>Devices
-   - Failover Objects
-   - Note bodgeit_srvc_dscvry
+   - Failover Objects (tab at top of page)
+   - Note: bodgeit_srvc_dscvry
    - Properties
    - Force to Standby
    - Confirm operation by selecting Force to Standby again
    
-#. Note that while the HA configuration on the BIG-IP in Azure is very similar to traditional HA configurations in an on prem data center, the operation is different. In Azure, an Azure API is triggered when a failover occurs. The public IP associated with a VIP is only assigned to the external network on the active member of the HA pair. Failover time can be greater than 30 seconds when using this method 
+   - **Note that while the HA configuration on the BIG-IP in Azure is very similar to traditional HA configurations in an on prem data center, the operation is different. In Azure, an Azure API is triggered when a failover occurs. The public IP associated with a VIP is only assigned to the external network on the active member of the HA pair. Failover time can be greater than 30 seconds when using this method**
+   |image302|
+
+   - Inspect the service discovery iApp
+   - iApps>>Application Services>>Applications
+   - Components
+   - Reconfigure
+   |image303|
+
+#. Inspect the HA components in Azure
+
+   - Access the Azure portal
+   - https://portal.azure.com 
+   - Username: x-student#@f5custlabs.onmicrosoft.com
+   - Password: ChangeMeNow123
+   - Notice the Availability set and Microsoft Compute/Virtual Machines
+   - https://www.petri.com/understanding-azure-availability-sets 
+   - Resource Groups
+   - student#-rg
+   - Sort using the Type field to move these objects to the top
+   |image304|
+   - Inspect the External Network Security groups associated with each BIG-IP
+   - Resource Groups
+   - xstudent#-rg
+   - xstudent#-ext0
+   - xstudent#-ext1
+   - Only one of these objects has a Public IP associated with the VIP 10.10.10.10
+
+
+   |image305|
+   
+#. Destroy the environment and verify that the objects were deleted
+   - Run the ansible playbook with deploy_state=absent 
+   - ansible-playbook f5agility.yml -e deploy_state=absent
+   - **This step takes about 15 minutes**
+   - Access the Azure portal
+   - https://portal.azure.com 
+   - Username: x-student#@f5custlabs.onmicrosoft.com
+   - Password: ChangeMeNow123
+   - Verify that the Resource group and associated objects is removed
 
 FINAL GRADE
 ~~~~~~~~~~~
@@ -70,13 +109,16 @@ for ways to improve.
    :height:4.96875in
 .. |image301| image:: /_static/class1/image301.png
    :width: 6.25126in
-   :height: 2.65672in
-.. |image17| image:: /_static/class1/image19.png
-   :width: 3.28358in
-   :height: 3.79055in
-.. |image18| image:: /_static/class1/image20.png
-   :width: 1.82813in
-   :height: 1.68013in
-.. |image19| image:: /_static/class1/image21.png
-   :width: 5.25486in
-   :height: 1.65269in
+   :height: 3.65672in
+.. |image302| image:: /_static/class1/image302.png
+   :width: 6.25126in
+   :height: 3.65672in
+.. |image303| image:: /_static/class1/image303.png
+   :width: 6.25126in
+   :height: 3.65672in
+.. |image304| image:: /_static/class1/image304.png
+   :width: 6.25126in
+   :height: 3.65672in
+.. |image305| image:: /_static/class1/image305.png
+   :width: 6.25126in
+   :height: 3.65672in
