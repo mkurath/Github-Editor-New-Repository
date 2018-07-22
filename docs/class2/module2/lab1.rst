@@ -91,7 +91,8 @@ In the following steps you will build and run a Docker container called agility2
    - ansible-vault view group_vars/all/vault.yml
 #. View the contents of group_vars/azure-f5.yml. Note the prefix variable and the various IP addresses. This is the variable input file to the ansible playbook. 
 
-   - 2.2. Run Ansible playbook with deploy_state=present to create deployment
+#. Run Ansible playbook with deploy_state=present to create deployment
+
    - ansible-playbook f5agility.yml -e deploy_state=present
    - **This step will take about 20 minutes**
    - Once complete review the comments on the screen. 
