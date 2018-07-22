@@ -23,7 +23,7 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
    | extVipAddr1    | 10.10.10.246     | 10.10.1010        |
    +----------------+------------------+-------------------+
 
-#3 Let’s take a look at the Ansible Playbooks used to create the objects (BIG-IP, BIG-IP configuration, and Linux servers) instead of running the 2nic playbook, this deployment will run the bigip_ha playbook.
+#. Let’s take a look at the Ansible Playbooks used to create the objects (BIG-IP, BIG-IP configuration, and Linux servers) instead of running the 2nic playbook, this deployment will run the bigip_ha playbook.
 
    - View the variable assignments in the group_vars/azure-f5.yml
    - cat group_vars/azure-f5.yml
