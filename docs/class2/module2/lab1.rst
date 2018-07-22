@@ -186,9 +186,10 @@ Add a VIP to the existing Application environment
    - Return to the Terminal window
    - Navigate to  /home/ansible/azure-f5
    - To add secondary IP to the Azure environment you will run another playbook
-    - ansible-playbook -i notahost, f5agility_add_ip.yml -e deploy_state=present
-•	To create second vip on the existing BIG-IP you will run another playbook
-    - ansible-playbook -i notahost, f5agility_create_vs2.yml -e deploy_state=present
+   - ansible-playbook -i notahost, f5agility_add_ip.yml -e deploy_state=present
+   - To create second vip on the existing BIG-IP you will run another playbook
+   - ansible-playbook -i notahost, f5agility_create_vs2.yml -e deploy_state=present
+   
 #. Let’s take a look at the Ansible Playbooks used to create the objects (Public IP in Azure and a VIP on the BIG_IP) 
 
    -Inspect the following files from the /home/ansible/azure-f5 directory. The first 4 are used to create the Azure components and the last 3 are used to create the VIP on the BIG-IP
@@ -232,8 +233,8 @@ Destroy the environment and verify that the objects were deleted
    - **This step takes about 15 minutes**
    - Access the Azure portal
    - https://portal.azure.com 
-    - Username: x-student#@f5custlabs.onmicrosoft.com
-    - Password: ChangeMeNow123
+   - Username: x-student#@f5custlabs.onmicrosoft.com
+   - Password: ChangeMeNow123
    - Verify that the Resource group and associated objects is removed
 
 
