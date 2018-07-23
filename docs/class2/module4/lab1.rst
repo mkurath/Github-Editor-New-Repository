@@ -51,7 +51,7 @@ Task 3 – Multi Tier bulleted items--How do I put in a Note
 #. This line started with  **#.<space>**
 
 .. NOTE::
-	 Notes are annotated by having the line above the text **<period><preiod><space>NOTE<colon><colon>**. A blank line must be included before and after the note
+	 Notes are annotated by having the line above the text **<period><preiod><space>NOTE<colon><colon>**. A blank line must be included before and after the note. The NOTE function **must** be left justified and it will restart the numbering scheme in the section. 
 
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
