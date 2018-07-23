@@ -1,16 +1,20 @@
 
 
-Lab 1.4: Build a webtop with VMware View and Citrix
+Lab 1.4: Simple Format using numbering and 1 level of indentation
 ==================================
-This lab will leverage the APM access policies created in prior labs to build a unified webtop with access to Vmware View and Citrix
+This section shows basic formatting
+underlining text with ==  makes a bold title line
+underlining text with --  makes a bold subtitle title line
+placing ** before and after text will create bold text  sample **bold text**
+starting a line with **#.<space>** will create sequentially numbersd steps
+starting a line with **<space><space><space>-<space> will give you bulleted text
 
 Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
 -----------------------------------------------------------
 
+#. This line started with  **#.<space>**
 
-#. From the "corporate-pc".
-
-#. Connect to the F5 config GUI 
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items withh be on seperate lines
 
    - https://f5-bigip1a.demosifun.net
    - Username: admin
