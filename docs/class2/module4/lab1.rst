@@ -2,7 +2,7 @@
 
 Lab 1.4: A short tutorial on formatting github docs using the github editor
 ==================================
-This section shows basic formatting
+This section shows basic formatting. Note the importance of spaces and blank lines
 
    - underlining text with ==  makes a bold title line
    - underlining text with --  makes a bold subtitle title line
@@ -44,6 +44,26 @@ Task 2 – Multi Tier bulleted items--note increased Font size
     - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
      - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
      - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+     
+Task 3 – Multi Tier bulleted items--How do I put in a Note
+-----------------------------------------------------------
+
+#. This line started with  **#.<space>**
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+    - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
+    - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+    - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+    - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)     
+     
 #. View the characteristics of the VDI_Combined_webtop  and VM_LAB_2_LBSS access policies
 
    - View the VM_LAB_2_LB_SF Access profile. The subsequent steps will integrate the required components from that Citrix  policy with the copy of the VM_LAB_1_PCOIP we created (VDI_Combined_webtop- Access>>Profiles/Policies>>Access Profiles
