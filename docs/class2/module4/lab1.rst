@@ -180,7 +180,7 @@ When you
 .. |image302| image:: /_static/class1/image302.png
    :width: 6.25126in
    :height: 3.65672in
-.. |image401| image:: /_static/class1/image302.png
+.. |image401| image:: /_static/class1/image401.png
    :width: 6.25126in
    :height: 3.65672in
 
