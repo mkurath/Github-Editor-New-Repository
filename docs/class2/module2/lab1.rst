@@ -221,13 +221,13 @@ Add a VIP to the existing Application environment
 	Note the Public IP associated with 10.0.10.247
 
 Test the newly created VIP
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    - Open a new browser window
    - http://<public_IP associated with 10.0.10.247>
    
 Destroy the environment and verify that the objects were deleted
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    - Run the ansible playbook with deploy_state=absent 
    - ansible-playbook f5agility.yml -e deploy_state=absent
