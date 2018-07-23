@@ -220,7 +220,8 @@ Add a VIP to the existing Application environment
    - IP Configurations from the tool list on the left of the screen
 	Note the Public IP associated with 10.0.10.247
 
-#. Test the newly created VIP
+Test the newly created VIP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    - Open a new browser window
    - http://<public_IP associated with 10.0.10.247>
