@@ -2,6 +2,10 @@
 
 Lab 1.4: A short tutorial on formatting github docs using the github editor
 ==================================
+Access the github editor by selecting the higlighted "pencil" icon 
+
+|image401|
+
 This section shows basic formatting. Note the importance of spaces and blank lines
 
    - underlining text with ==  makes a bold title line
@@ -173,6 +177,9 @@ When you
    :width: 6.25126in
    :height: 3.65672in
 .. |image302| image:: /_static/class1/image302.png
+   :width: 6.25126in
+   :height: 3.65672in
+.. |image401| image:: /_static/class1/image302.png
    :width: 6.25126in
    :height: 3.65672in
 
