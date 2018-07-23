@@ -69,7 +69,68 @@ Task 3 – Multi Tier bulleted items--How do I put in a Note
     - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
      - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
      - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)     
-     
+
+Task 4 – Multi Tier bulleted items--How do I add a table
+-----------------------------------------------------------
+
+#. This line started with  **#.<space>**
+
+In the example below the use of the "hyphen" **-** results in a normal collumn row. The title row can be highlighted by using the "equal sign" **=** 
+
++--------------------------------------------+-----------------------------+
+|Column Title 1                              |Column Title 2               |
++============================================+=============================+
+|Name                                        | Combined-VDI-PCOIP          |
++--------------------------------------------+-----------------------------+
+|Destination Address/Mask                    | 192.168.3.157               |
++--------------------------------------------+-----------------------------+
+|Service Port                                | 4172                        +
++--------------------------------------------+-----------------------------+
+|Configuration                               |                             |
++--------------------------------------------+-----------------------------+
+|Prptocol                                    | UDP                         |
++--------------------------------------------+-----------------------------+
+|Source Address Translation                  | Auto Map                    |
++--------------------------------------------+-----------------------------+
+|Access Policy                               |                             |
++--------------------------------------------+-----------------------------+
+|Application Tunnels (Jave & Per-App VPN)    | Enabled - Check Box         |
++--------------------------------------------+-----------------------------+
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+    - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
+    - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
+
++--------------------------------------------+-----------------------------+
+|Column Title 1                              |Column Title 2               |
++============================================+=============================+
+|Name                                        | Combined-VDI-PCOIP          |
++--------------------------------------------+-----------------------------+
+|Destination Address/Mask                    | 192.168.3.157               |
++--------------------------------------------+-----------------------------+
+|Service Port                                | 4172                        +
++--------------------------------------------+-----------------------------+
+|Configuration                               |                             |
++--------------------------------------------+-----------------------------+
+|Prptocol                                    | UDP                         |
++--------------------------------------------+-----------------------------+
+|Source Address Translation                  | Auto Map                    |
++--------------------------------------------+-----------------------------+
+|Access Policy                               |                             |
++--------------------------------------------+-----------------------------+
+|Application Tunnels (Jave & Per-App VPN)    | Enabled - Check Box         |
++--------------------------------------------+-----------------------------+
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+    - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+    - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+
 #. View the characteristics of the VDI_Combined_webtop  and VM_LAB_2_LBSS access policies
 
    - View the VM_LAB_2_LB_SF Access profile. The subsequent steps will integrate the required components from that Citrix  policy with the copy of the VM_LAB_1_PCOIP we created (VDI_Combined_webtop- Access>>Profiles/Policies>>Access Profiles
