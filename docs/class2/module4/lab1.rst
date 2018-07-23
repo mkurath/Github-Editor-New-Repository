@@ -75,7 +75,7 @@ Task 4 – Multi Tier bulleted items--How do I add a table
 
 #. This line started with  **#.<space>**
 
-In the example below the use of the "hyphen" **-** results in a normal collumn row. The title row can be highlighted by using the "equal sign" **=** 
+In the example below the use of the "hyphen" **-** results in a normal collumn row. The title row can be highlighted by using the "equal sign" **=** .   Notice that the overall numberiung scheme is reset when the table is justified to the left. using 4 spaces in front of the table (like the 4 spaces the text is indented) allows the number scheme to work correctly
 
 +--------------------------------------------+-----------------------------+
 |Column Title 1                              |Column Title 2               |
