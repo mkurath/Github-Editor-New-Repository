@@ -137,7 +137,7 @@ Task 5 – Multi Tier bulleted items--How do I add an image
 
 #. This line started with  **#.<space>**
 
- |image3011|
+ |image301|
 
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
