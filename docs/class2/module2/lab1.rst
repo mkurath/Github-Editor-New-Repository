@@ -135,7 +135,7 @@ Let’s take a look at what was built by the process in Azure. This section will
    - You could  browse to the Public IP address  
    - The Private IP address will be configured as a pool member on the BIG-IP
    - Inspect the object which contains the Linux Server access list
-    -vm_bodgeit01_inf  	Network security group
+    - vm_bodgeit01_inf  	Network security group
     - vm_bodgeit02_inf	Network security group
     - Notice that only port 22 is permitted
     - Notice that any source IP address is allowed to connect. Typically thos would be much more restrictive
