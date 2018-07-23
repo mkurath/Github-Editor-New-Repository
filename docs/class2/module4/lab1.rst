@@ -1,6 +1,6 @@
 
 
-Lab 1.4: Simple Format using numbering and 1 level of indentation
+Lab 1.4: A short tutorial on formatting github docs using the github editor
 ==================================
 This section shows basic formatting
 underlining text with ==  makes a bold title line
@@ -9,7 +9,7 @@ placing ** before and after text will create bold text  sample **bold text**
 starting a line with **#.<space>** will create sequentially numbersd steps
 starting a line with **<space><space><space>-<space>** will give you bulleted text
 
-Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
+Task 1 – Simple Format using numbering and 1 level of indentation
 -----------------------------------------------------------
 
 #. This line started with  **#.<space>**
@@ -25,6 +25,21 @@ Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
    - This line starts with **<space><space><space>-<space>**
    - This line starts with **<space><space><space>-<space>**
 
+Task 2 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
+-----------------------------------------------------------
+
+#. This line started with  **#.<space>**
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>** 
+
+#. This line started with  **#.<space>**. If you  dont put a blank line under it, the bulleted items run together
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
 #. View the characteristics of the VDI_Combined_webtop  and VM_LAB_2_LBSS access policies
 
    - View the VM_LAB_2_LB_SF Access profile. The subsequent steps will integrate the required components from that Citrix  policy with the copy of the VM_LAB_1_PCOIP we created (VDI_Combined_webtop- Access>>Profiles/Policies>>Access Profiles
