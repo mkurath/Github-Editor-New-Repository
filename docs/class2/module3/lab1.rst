@@ -1,3 +1,4 @@
+
 Lab 3.1: Modify the Ansible configuration to re-deploy an HA pair of big-IP’s with the same application environment
 ============================
 
@@ -9,6 +10,7 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
 
    - Prompt is now /home/ansible/azure-f5
    - Change directory to /home/ansible
+   - **Troubleshooting tip** If you closed the terminal window restart the container with the 2 steps below
    - sudo docker ps -a (this will allow you to see the CONTAINER ID)
    - sudo docker exec -i  -t <CONTAINER ID> /bin/sh 
 
