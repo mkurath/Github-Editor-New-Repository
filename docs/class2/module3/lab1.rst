@@ -9,7 +9,6 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
 #. Return to the Terminal window
 
    - Prompt is now /home/ansible/azure-f5
-   - Change directory to /home/ansible
    - **Troubleshooting tip** If you closed the terminal window restart the container with the 2 steps below
    - sudo docker ps -a (this will allow you to see the CONTAINER ID)
    - sudo docker exec -i  -t <CONTAINER ID> /bin/sh 
@@ -20,7 +19,7 @@ This lab assumes that you have completed LAB 2 which includes build and run the 
    +----------------+------------------+-------------------+
    | Variable       | Existing Value   + New Value         |
    +================+==================+===================+
-   | Deployment     | 2nic             | ha                |
+   | deployment     | 2nic             | ha                |
    +----------------+------------------+-------------------+
    | extVipAddr1    | 10.10.10.246     | 10.10.1010        |
    +----------------+------------------+-------------------+
