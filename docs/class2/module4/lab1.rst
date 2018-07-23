@@ -26,7 +26,7 @@ Task 1 – Simple Format using numbering and 1 level of indentation
    - This line starts with **<space><space><space>-<space>**
    - This line starts with **<space><space><space>-<space>**
 
-Task 2 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
+Task 2 – Multi Tier bulleted items--note increased Font size
 -----------------------------------------------------------
 
 #. This line started with  **#.<space>**
