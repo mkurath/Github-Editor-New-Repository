@@ -76,7 +76,7 @@ Task 4 – Multi Tier bulleted items--How do I add a table
 #. This line started with  **#.<space>**
 
     - In the example below the use of the "hyphen" **-** results in a normal collumn row. The title row can be highlighted by using the "equal sign" **=** .   
-    - Notice that the overall numberiung scheme is reset when the table is justified to the left. using 4 spaces in front of the table (like the 4 spaces the text is indented) allows the number scheme to work correctly
+    - Notice that the overall numbering scheme is reset when the table is justified to the left. using 4 spaces in front of the table (like the 4 spaces the text is indented) allows the number scheme to work correctly
 
 +--------------------------------------------+-----------------------------+
 |Column Title 1                              |Column Title 2               |
@@ -140,7 +140,7 @@ Task 5 – Multi Tier bulleted items--How do I add an image
 
  |image301|
  
-    - Notice that the overall numberiung scheme is reset when the table is justified to the left. Using 4 spaces in front of the table (like the 4 spaces the text is indented) allows the number scheme to work correctly
+    - Notice that the overall numbering scheme is reset when the image is justified to the left. Using 4 spaces in front of the image (like the 4 spaces the text is indented) allows the number scheme to work correctly
     - Include a blank line above and below the image
     - You must have a definition at the bottom of the text to size and link the image to static content
 
