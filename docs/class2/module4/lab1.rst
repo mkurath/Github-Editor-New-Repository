@@ -3,11 +3,12 @@
 Lab 1.4: A short tutorial on formatting github docs using the github editor
 ==================================
 This section shows basic formatting
-underlining text with ==  makes a bold title line
-underlining text with --  makes a bold subtitle title line
-placing ** before and after text will create bold text  sample **bold text**
-starting a line with **#.<space>** will create sequentially numbersd steps
-starting a line with **<space><space><space>-<space>** will give you bulleted text
+
+   - underlining text with ==  makes a bold title line
+   - underlining text with --  makes a bold subtitle title line
+   - placing ** before and after text will create bold text  sample **bold text**
+   - starting a line with **#.<space>** will create sequentially numbersd steps
+   - starting a line with **<space><space><space>-<space>** will give you bulleted text
 
 Task 1 – Simple Format using numbering and 1 level of indentation
 -----------------------------------------------------------
