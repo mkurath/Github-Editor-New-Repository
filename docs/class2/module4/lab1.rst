@@ -7,25 +7,23 @@ underlining text with ==  makes a bold title line
 underlining text with --  makes a bold subtitle title line
 placing ** before and after text will create bold text  sample **bold text**
 starting a line with **#.<space>** will create sequentially numbersd steps
-starting a line with **<space><space><space>-<space> will give you bulleted text
+starting a line with **<space><space><space>-<space>** will give you bulleted text
 
 Task 1 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
 -----------------------------------------------------------
 
 #. This line started with  **#.<space>**
 
-#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items withh be on seperate lines
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
-   - https://f5-bigip1a.demosifun.net
-   - Username: admin
-   - Password: password 
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>** 
 
-#. Copy the VM_LAB_1_PCOIP access profile to VDI_Combined_webtop
-
-   - Access>>Profiles/Policies>>Access Profiles
-   - Click the “Copy” hyperlink on the VM_LAB_1_PCOIP  line
-   - Name the profile VDI_Combined_webtop
-   - Press the "Copy" button (bottom left)
+#. This line started with  **#.<space>**. If you  dont put a blank line under it, the bulleted items run together
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
 
 #. View the characteristics of the VDI_Combined_webtop  and VM_LAB_2_LBSS access policies
 
