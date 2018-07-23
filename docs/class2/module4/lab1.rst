@@ -137,14 +137,14 @@ Task 5 – Multi Tier bulleted items--How do I add an image
 
 #. This line started with  **#.<space>**
 
- |image41|
+ |image3011|
 
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
     - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
     - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
     
-   |image42|
+   |image302|
 
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
@@ -155,18 +155,14 @@ Task 5 – Multi Tier bulleted items--How do I add an image
      - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
      - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
 
-#
 
-.. |image41| image:: /_static/class1/image41.png
-   :width: 5.40625in
-   :height: 3.04167in
-.. |image42| image:: /_static/class1/image42.png
-   :width: 5.40625in
-   :height: 3.04167in
-.. |image43| image:: /_static/class1/image43.png
-   :width: 5.40625in
-   :height: 3.04167in
-.. |image44| image:: /_static/class1/image44.png
-   :width: 5.40625in
-   :height: 3.04167in
+.. |image3| image:: /_static/class1/image3.png
+   :width: 3.58333in
+   :height: 4.96875in
+.. |image301| image:: /_static/class1/image301.png
+   :width: 6.25126in
+   :height: 3.65672in
+.. |image302| image:: /_static/class1/image302.png
+   :width: 6.25126in
+   :height: 3.65672in
 
