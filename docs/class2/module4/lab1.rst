@@ -150,9 +150,6 @@ Task 5 – Multi Tier bulleted items--How do I add an image
     - An easy way to create images is to ue the snipping tool to capture and save the image as a png file. The image can then be uploaded to the static content part of the document structure 
 
 
-
-When you 
-
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
     - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
