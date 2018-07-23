@@ -143,6 +143,7 @@ Task 5 – Multi Tier bulleted items--How do I add an image
     - Notice that the overall numbering scheme is reset when the image is justified to the left. Using 4 spaces in front of the image (like the 4 spaces the text is indented) allows the number scheme to work correctly
     - Include a blank line above and below the image
     - You must have a definition at the bottom of the text to size and link the image to static content
+    - An easy way to create images is to ue the snipping tool to capture and save the image as a png file. The image can then be uploaded to the static content part of the document structure 
 
 
 
