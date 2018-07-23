@@ -114,7 +114,7 @@ for ways to improve.
 
 .. |image3| image:: /_static/class1/image3.png
    :width: 3.58333in
-   :height:4.96875in
+   :height: 4.96875in
 .. |image301| image:: /_static/class1/image301.png
    :width: 6.25126in
    :height: 3.65672in
