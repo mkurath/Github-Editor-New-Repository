@@ -16,9 +16,9 @@ Task 1 – Simple Format using numbering and 1 level of indentation
 
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
-   - This line starts with **<space><space><space>-<space>**
-   - This line starts with **<space><space><space>-<space>**
-   - This line starts with **<space><space><space>-<space>** 
+   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
+   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
+   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
 
 #. This line started with  **#.<space>**. If you  dont put a blank line under it, the bulleted items run together
    - This line starts with **<space><space><space>-<space>**
@@ -32,20 +32,17 @@ Task 2 – Build a VIP with an Access Policy allowing acces to VMware and Citrix
 
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
-    - This line starts with **<space><space><space>-<space>**
-    - This line starts with **<space><space><space>-<space>**
-    - This line starts with **<space><space><space>-<space>** 
+    - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
+    - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
 
 #. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
-    - This line starts with **<space><space><space>-<space>**
-     - This line starts with **<space><space><space>-<space>**
-     - This line starts with **<space><space><space>-<space>**
-     - This line starts with **<space><space><space>-<space>**
-    - This line starts with **<space><space><space>-<space>**
-     - This line starts with **<space><space><space>-<space>**
-     - This line starts with **<space><space><space>-<space>**
-     - This line starts with **<space><space><space>-<space>**
+    - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+    - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
+     - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
 #. View the characteristics of the VDI_Combined_webtop  and VM_LAB_2_LBSS access policies
 
    - View the VM_LAB_2_LB_SF Access profile. The subsequent steps will integrate the required components from that Citrix  policy with the copy of the VM_LAB_1_PCOIP we created (VDI_Combined_webtop- Access>>Profiles/Policies>>Access Profiles
