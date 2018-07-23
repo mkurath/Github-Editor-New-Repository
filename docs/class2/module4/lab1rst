@@ -1,0 +1,31 @@
+
+
+Lab 1.4: A short tutorial on formatting github docs using the github editor
+==================================
+Access the github editor by selecting the higlighted "pencil" icon 
+
+|image401|
+
+This section shows basic formatting. Note the importance of spaces and blank lines
+
+   - underlining text with ==  makes a bold title line
+   - underlining text with --  makes a bold subtitle title line
+   - placing ** before and after text will create bold text  sample **bold text**
+   - starting a line with **#.<space>** will create sequentially numbersd steps
+   - starting a line with **<space><space><space>-<space>** will give you bulleted text
+
+Task 1 – Simple Format using numbering and 1 level of indentation
+-----------------------------------------------------------
+
+#. This line started with  **#.<space>**
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
+   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
+   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
+
+#. This line started with  **#.<space>**. If you  dont put a blank line under it, the bulleted items run together
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
+   - This line starts with **<space><space><space>-<space>**
