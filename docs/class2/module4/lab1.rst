@@ -52,14 +52,14 @@ Task 2 – Multi Tier bulleted items--
 Task 2A – Multi Tier bulleted items--note increased Font size
 -----------------------------------------------------------
 
-#. This line started with  **#.<space>**
+ #. This line started with  **<space>#.<space>**
 
-#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+ #. This line started with  **<space>#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
     - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
     - This line starts with **<space><space><space><space><space>-<space>** (4 spaces, hyphen, space)
 
-#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+ #. This line started with  **<space>#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
     - This line starts with **<space><space><space><space>-<space>** (4 spaces, hyphen, space)
      - This line starts with **<space><space><space><space><space>-<space>** (5 spaces, hyphen, space)
