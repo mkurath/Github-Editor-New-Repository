@@ -17,7 +17,7 @@ The format of this doc is all in the docs directory
   - class2 - Text formatting and dicument structure are  defined in this section
    - class2.rst   Contains the structure of the top level title in the index
     -labinfo.rst  Contains the text of the top level title in the index
-   -modulex      Think about this as chapters. Each chapter has 2 components
+   - modulex      Think about this as chapters. Each chapter has 2 components
     - modulex.rst   Contains the structure of the top level title in the index
     - lab1.rst  Contains the text of the top level title in the index
     
