@@ -19,7 +19,7 @@ The format of this doc is all in the docs directory
    - labinfo.rst  Contains the text of the top level title in the index
    - module**#**     Think about this as chapters. Each chapter has 2 components
     - module**#**.rst   Contains the structure of the top level title in the index
-    - lab1.rst  Contains the text of the top level title in the index
+    - lab1.rst  Contains the text of the top level title in the index **After cloning a document edit this text**
     
 |image503|
 
@@ -40,8 +40,10 @@ Adding Sections
   - Click the **Create new file** button
   - enter /lab1.rst  **Note: # will be your new subdirectory**
   - Paste the partial contents from the existing lab1.rst into the new file
+  
 |image501|
-#. 
+
+ #. Edit the new lab1.rst as sescribed in the preceeding chapter 
 
 
 
