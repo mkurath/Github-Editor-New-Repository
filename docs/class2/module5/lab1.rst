@@ -10,7 +10,7 @@ The format of this doc is all in the docs directory
 
 |image502|
 
- #. 3 important directories are used as follows
+ #. important directories
  
   - _static
    - Images are stored in docs/_static/Class1
