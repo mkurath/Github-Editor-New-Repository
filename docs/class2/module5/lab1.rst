@@ -17,30 +17,35 @@ The format of this doc is all in the docs directory
   - class2 - Text formatting and dicument structure are  defined in this section
    - class2.rst   Contains the structure of the top level title in the index
    - labinfo.rst  Contains the text of the top level title in the index
-   - modulex      Think about this as chapters. Each chapter has 2 components
-    - modulex.rst   Contains the structure of the top level title in the index
+   - module**#**     Think about this as chapters. Each chapter has 2 components
+    - module**#**.rst   Contains the structure of the top level title in the index
     - lab1.rst  Contains the text of the top level title in the index
     
 |image503|
 
-
-Task 1 – Adding Sections
+Clone an existing doc to a new repository
 -----------------------------------------------------------
+
+Adding Sections
+-----------------------------------------------------------
+ #. Create module**#**.rst and a lab1.rst in a new directory under docs/class2.
+ 
+  - copy the contents from an existing  module**#**.rst
+  - navigate to docs/class2
+  - Click the **Create new file** button
+  - enter module**#**/module**#**.rst  **Note: # wil be your new subdirectory**
+  - Paste the contents from the existing module**#**.rst into the new file
+  - copy the beginning of the contents from an existing  lab1.rst **This helps with consistent formatting. You will probably replace all the text**
+  - navigate to docs/class2/module**#** **Note: you created a new module# in the prior steps**
+  - Click the **Create new file** button
+  - enter /lab1.rst  **Note: # will be your new subdirectory**
+  - Paste the partial contents from the existing lab1.rst into the new file
 |image501|
 #. 
 
-#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
 
-   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
-   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
-   - This line starts with **<space><space><space>-<space>** (3 spaces, hyphen, space)
 
-#. This line started with  **#.<space>**. If you  dont put a blank line under it, the bulleted items run together
-   - This line starts with **<space><space><space>-<space>**
-   - This line starts with **<space><space><space>-<space>**
-   - This line starts with **<space><space><space>-<space>**
-
-Task 2 – Static Content (images) 
+Static Content (images) 
 -----------------------------------------------------------
 
 
