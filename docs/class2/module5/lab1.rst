@@ -1,5 +1,5 @@
 
-Lab 1.5: How is the overall doc formatted
+Lab 1.5: How is the overall doc formatted--this section is under construction
 ==================================
 Access the github repository. The instructions below are specific to the configuration of this document. Some docs have different structures
 
