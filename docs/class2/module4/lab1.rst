@@ -30,7 +30,26 @@ Task 1 – Simple Format using numbering and 1 level of indentation
    - This line starts with **<space><space><space>-<space>**
    - This line starts with **<space><space><space>-<space>**
 
-Task 2 – Multi Tier bulleted items--note increased Font size
+Task 2 – Multi Tier bulleted items--
+-----------------------------------------------------------
+
+#. This line started with  **#.<space>**
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+    - This line starts with **<space>-<space>** (1 spaces, hyphen, space)
+    - This line starts with **<space>-<space>** (1 spaces, hyphen, space)
+
+#. This line started with  **#.<space>**. If you put a blank line under it, the bulleted items will be on seperate lines
+
+ - This line starts with **<space>-<space>** (1 spaces, hyphen, space)
+  - This line starts with **<space>-<space>** (2 spaces, hyphen, space)
+  - This line starts with **<space>-<space>** (2 spaces, hyphen, space)
+ - This line starts with **<space>-<space>** (1 spaces, hyphen, space)
+   - This line starts with **<space><space>-<space>** (2 spaces, hyphen, space)
+  - This line starts with **<space><space>-<space>** (5 spaces, hyphen, space)
+
+Task 2A – Multi Tier bulleted items--note increased Font size
 -----------------------------------------------------------
 
 #. This line started with  **#.<space>**
