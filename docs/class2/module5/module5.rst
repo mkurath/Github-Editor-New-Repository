@@ -1,4 +1,4 @@
-Experiment with github formatting
+Document structure
 =============================
 
 The purpose of this module is to experiment with formatting github documentation
