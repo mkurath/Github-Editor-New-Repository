@@ -49,7 +49,7 @@ Task 2 – Multi Tier bulleted items--
    - This line starts with **<space><space>-<space>** (2 spaces, hyphen, space)
   - This line starts with **<space><space>-<space>** (5 spaces, hyphen, space)
 
-Task 2A – Multi Tier bulleted items--note increased Font size
+Task 2A – Multi Tier bulleted items--note increased Font size on the subtitle line
 -----------------------------------------------------------
 
  #. This line started with  **<space>#.<space>**
