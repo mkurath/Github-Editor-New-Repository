@@ -10,8 +10,6 @@ Welcome to Github Editor for Dummies
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
-   :caption: Contents:
    :glob:
 
    class*/class*
